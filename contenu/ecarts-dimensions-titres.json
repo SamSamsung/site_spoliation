@@ -1,0 +1,90 @@
+// ============================================================================
+//  FICHIER : ecarts-dimensions-titres.json
+//  RÔLE    : page « Les écarts de dimensions et de titres ».
+// ============================================================================
+{
+  "banniere": {
+    "sur_titre": "Le traitement administratif des réclamations — 3/3",
+    "titre": "Les écarts de dimensions et de titres",
+    "chapo": "Les mesures et les intitulés varient d'une source à l'autre. La concordance entre les tableaux déclarés spoliés et ceux figurant dans les archives repose non sur ces éléments, mais sur un faisceau d'indices convergents.",
+    "image": "banniere-ecarts.jpg",
+    "credit_image": "Répertoire des biens spoliés en France durant la guerre 1939-1945"
+  },
+
+  "sections": [
+
+    {
+      "ancre": "constat",
+      "titre": "Le constat",
+      "paragraphes": [
+        "Il existe quelques écarts, à la marge, de dimensions des tableaux pour certaines œuvres. C'est le cas des tableaux de Renoir, de Pissarro et de Modigliani/Soutine. Les écarts les plus significatifs concernent le tableau d'Albert Marquet et celui de Pierre Bonnard."
+      ]
+    },
+
+    {
+      "ancre": "tableau-dimensions",
+      "titre": "Les dimensions, source par source",
+      // Ce bloc affiche un tableau comparatif. Pour ajouter une ligne, copiez
+      // une ligne existante entre crochets et modifiez son contenu.
+      "tableau": {
+        "entetes": ["Œuvre", "Première source", "Seconde source"],
+        "lignes": [
+          ["Pierre Bonnard — « La femme au canapé »", "51 × 56 cm (Archives Nationales d'Allemagne)", "65 × 80 cm (Répertoire des biens spoliés)"],
+          ["Albert Marquet — « Les bords de la Seine à Paris sous la neige »", "62 × 92 cm (Archives Nationales d'Allemagne)", "72 × 75 cm (Répertoire des biens spoliés)"],
+          ["Modigliani / Soutine — « La porteuse de pain »", "51 × 73 cm (archives de l'ERR)", "50 × 75 cm (Répertoire des biens spoliés)"],
+          ["Pierre-Auguste Renoir — « Le Cannet »", "56 × 70 cm (Répertoire des biens spoliés)", "53 × 64 cm (catalogue de la vente)"],
+          ["Camille Pissarro — « La cavée, plein midi »", "73 × 92 cm (catalogue)", "73 × 95 cm (Répertoire des biens spoliés)"]
+        ]
+      }
+    },
+
+    {
+      "ancre": "tableau-titres",
+      "titre": "Les titres, source par source",
+      "tableau": {
+        "entetes": ["Œuvre", "Titre dans les sources françaises", "Titre dans les sources allemandes ou autres"],
+        "lignes": [
+          ["Pierre Bonnard", "« La femme au canapé »", "« Jeune femme prenant une tasse de thé »"],
+          ["Albert Marquet", "« Les bords de la Seine à Paris sous la neige » (inventaire de Raoul Meyer et RBS)", "« Pont Saint-Michel » (dossiers de l'ERR)"],
+          ["Modigliani / Soutine", "« La porteuse de pain », attribuée à Modigliani", "Attribution à Soutine au verso de la photographie de l'ERR"],
+          ["Pierre-Auguste Renoir", "« Le Cannet »", "« Paysage avec des jeunes femmes et un bébé »"],
+          ["Camille Pissarro", "« La cavée à Eragny », « Grands chemins avec paysans », « Fermiers allant au travail », « Fermiers sur une route »", "« Route de campagne avec paysans » (UNB 350)"]
+        ]
+      }
+    },
+
+    {
+      "ancre": "faisceau",
+      "titre": "Un faisceau d'indices plus probant",
+      "paragraphes": [
+        "On peut toutefois considérer que les concordances entre les tableaux déclarés spoliés par Raoul Meyer et ceux figurant dans les archives nationales d'Allemagne et dans les documents de traitement des demandes de restitution par les autorités françaises reposent non sur les dimensions des tableaux, ni sur leurs titres, qui divergent, mais sur un faisceau d'indices plus probants."
+      ],
+      "encadre": {
+        "titre": "Les éléments de concordance",
+        "liste": [
+          "Le même propriétaire spolié.",
+          "Le même artiste.",
+          "Le même ensemble d'archives ERR / Raoul Meyer.",
+          "Le même numéro allemand d'inventaire : « Meyer 6 » dans le cas du tableau d'Albert Marquet, « Meyer 12 » dans le cas du tableau de Pierre Bonnard."
+        ]
+      }
+    },
+
+    {
+      "ancre": "suite",
+      "titre": "Aller plus loin",
+      "liens": [
+        {
+          "libelle": "Les réclamations auprès des autorités françaises",
+          "lien": "demarches/autorites-francaises.html",
+          "description": "OBIP, Commission de Récupération Artistique et Répertoire des biens spoliés."
+        },
+        {
+          "libelle": "Les réclamations auprès de l'État allemand",
+          "lien": "demarches/autorites-allemandes.html",
+          "description": "La loi BRüG et la décision du 16 mars 1961."
+        }
+      ]
+    }
+  ]
+}

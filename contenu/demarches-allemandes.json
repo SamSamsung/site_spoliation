@@ -1,0 +1,117 @@
+// ============================================================================
+//  FICHIER : demarches-allemandes.json
+//  RÔLE    : page « Les réclamations auprès de l'État allemand ».
+// ============================================================================
+{
+  "banniere": {
+    "sur_titre": "Le traitement administratif des réclamations — 2/3",
+    "titre": "Les réclamations auprès de l'État allemand",
+    "chapo": "En 1961, les autorités ouest-allemandes statuent sur les demandes de Raoul Meyer dans le cadre de la loi BRüG. Un rejet pour le Bonnard, la clôture de la procédure pour les autres : la charge de prouver que l'œuvre avait franchi la frontière de la RFA s'est révélée un obstacle insurmontable.",
+    "image": "banniere-demarches-allemandes.jpg",
+    "credit_image": "Archives MEAE 209SUP/506"
+  },
+
+  "sections": [
+
+    {
+      "ancre": "brug",
+      "titre": "La loi BRüG et son obstacle probatoire",
+      "paragraphes": [
+        "En 1961, les autorités ouest-allemandes ont statué sur les demandes de restitution de Raoul Meyer dans le cadre de la loi fédérale sur les restitutions (Bundesrückerstattungsgesetz — BRüG), promulguée en 1957. La loi stipulait que la République Fédérale d'Allemagne n'indemnisait que les biens spoliés dont le demandeur — la famille spoliée ou l'État français — pouvait prouver qu'ils avaient été transportés sur le territoire géographique de la RFA ou de Berlin-Ouest.",
+        "Les agents allemands traitaient alors des milliers de dossiers d'indemnisation. Le mandat administratif conféré aux enquêteurs ne leur permettait pas d'exploiter les fiches cartonnées ou encore les mentions manuscrites apposées par l'ERR au dos des photographies. Ainsi, si un tableau ne figurait pas dans la colonne d'une liste officielle, l'enquêteur clôturait la recherche."
+      ]
+    },
+
+    {
+      "ancre": "decision-1961",
+      "titre": "La décision du 16 mars 1961",
+      "paragraphes": [
+        "La décision concernant les tableaux spoliés de Raoul Meyer fut rendue par les autorités ouest-allemandes le 16 mars 1961, statuant sur la demande n° 568 du 13 décembre 1955 transmise par les autorités françaises (Archives MEAE 209SUP/506). Elle s'appuie également sur la note en date du 26 janvier 1961 transmise aux autorités allemandes par Rose Valland, au nom de la direction des Musées de France, Service de Protection des Œuvres d'Art (Archives Nationales d'Allemagne B 323 429).",
+        "Les autorités allemandes adoptèrent une décision de rejet pour le tableau de Pierre Bonnard, « Jeune femme prenant une tasse de thé », considérant que ce tableau ne pouvait se trouver en Allemagne. Pour les autres tableaux, les autorités prononcèrent la clôture de la procédure, faute de preuve de leur localisation exacte en Allemagne."
+      ],
+      "visuels": [
+        {
+          "fichier": "decision-16-mars-1961-209sup-506.jpg",
+          "legende": "Décision rendue le 16 mars 1961 par les autorités ouest-allemandes sur la demande n° 568 du 13 décembre 1955.",
+          "credit": "Archives MEAE 209SUP/506"
+        }
+      ]
+    },
+
+    {
+      "ancre": "bonnard",
+      "titre": "Le tableau de Pierre Bonnard (Meyer 12) : un rejet",
+      "paragraphes": [
+        "Les autorités relèvent que le tableau « n'a pas été retrouvé dans l'un des dépôts de l'ERR que les forces armées américaines ont pris en charge postérieurement à 1945 en Bavière et dans la zone d'occupation américaine en Autriche ». Elles en concluent que le tableau n'a pas été transféré en République Fédérale d'Allemagne. En outre, les autorités indiquent « qu'il s'ajoute à cela [qu'il n'est pas mentionné] parmi les objets indiqués par les archives en dépôt à l'Administration-séquestre des biens culturels comme échangés à Paris avec des galeries d'art ».",
+        "Les autorités relèvent en outre que le tableau n'a pu faire l'objet d'un transport vers le dépôt de Seisenegg (ancienne zone soviétique d'occupation en Autriche), dans la mesure où les autorités soviétiques l'auraient, dans ce cas, restitué. Utilisant un raisonnement par simple déduction, les autorités relèvent que le tableau n'a donc pu faire l'objet que d'un transport vers le dépôt de Nikolsburg (Tchécoslovaquie)."
+      ],
+      "citation": {
+        "texte": "Le sort ultérieur des tableaux transportés à ce dépôt est inconnu. Ainsi que l'a déjà fait savoir le Service Fédéral à l'occasion d'autres affaires de restitution, il n'y a pas matière, de ce fait, à un droit de restitution à l'encontre de la République Fédérale. Car celui-ci présuppose qu'il soit établi avec certitude ou une forte probabilité que l'objet réclamé a été transporté dans la partie de l'Allemagne qui constitue le territoire de la République Fédérale d'Allemagne. Or les existants du dépôt de Nikolsburg n'ont pas été transportés avant la fin de la guerre en République Fédérale, de sorte qu'il y a lieu de partir du point de vue qu'ils sont demeurés hors des limites du territoire de la République Fédérale. (…) Une enquête au sujet du sort des objets se trouvant à Nikolsburg est impossible pour des motifs de droit et de fait. Il ne pouvait en conséquence être fait droit à cette demande.",
+        "source": "Décision du 16 mars 1961 — Archives MEAE 209SUP/506"
+      },
+      "encadre": {
+        "titre": "Un raisonnement démenti par les faits",
+        "paragraphes": [
+          "Les autorités s'appuient sur ce même fondement — le transport vers Nikolsburg — pour parvenir à une décision similaire concernant le tableau de Camille Pissarro « La Bergère ». Or on sait que ce tableau, retrouvé au musée de l'Oklahoma aux États-Unis, n'a pas été transporté au dépôt de Nikolsburg : il a été envoyé en Suisse en 1945 par un intermédiaire du nom de Léon de Sépibus. Les conclusions de l'enquête sont donc, à tout le moins, démenties par le sort de cet autre tableau.",
+          "En outre, à notre connaissance, et contrairement au tableau d'Auguste Renoir « Le Cannet », il n'existe aucune trace du transport du tableau de Pierre Bonnard vers le dépôt de Nikolsburg."
+        ]
+      }
+    },
+
+    {
+      "ancre": "modigliani-marquet",
+      "titre": "« La porteuse de pain » (Meyer 9) et « Les bords de la Seine » (Meyer 6) : la clôture",
+      "paragraphes": [
+        "Les autorités relèvent que « chacun de ces tableaux porte la mention “retourné à l'opération M pour mise en vente” »."
+      ],
+      "citation": {
+        "texte": "De cette mention, il résulte que l'ERR n'a pas conservé ces tableaux, primitivement pris en charge par lui, mais les a retournés au Service-Ouest à Paris en tant qu'organisme responsable de l'Opération M. Étant donné que ce transfert en retour a été effectué à Paris, il est permis d'en déduire, en l'absence d'indice contraire, que ces objets avaient été choisis par des représentants de l'ERR au dépôt de tableaux du Service-Ouest à Paris, place des États-Unis, et transportés au dépôt de l'ERR du Jeu de Paume. De là ils furent retournés, d'après les mentions en question, au dépôt de tableaux du Service-Ouest. C'est en conséquence ce service qui en a disposé ultérieurement. (…) [O]n ne saurait exclure l'hypothèse d'un transfert de ces objets hors de France et en Allemagne, et par suite sur le territoire de la République Fédérale d'Allemagne.",
+        "source": "Décision du 16 mars 1961 — Archives MEAE 209SUP/506"
+      },
+      "paragraphes_apres": [
+        "Les autorités allemandes concluent à la clôture de la procédure de restitution, « faute d'indices quelconques »."
+      ]
+    },
+
+    {
+      "ancre": "pissarro",
+      "titre": "« La Cavée, paysage d'été en plein midi » (Meyer 3) : la clôture",
+      "paragraphes": [
+        "Les autorités fédérales allemandes relèvent que le tableau ne figure pas dans les inventaires de l'ERR."
+      ],
+      "citation": {
+        "texte": "On ne saurait, en conséquence, considérer comme prouvée leur soustraction et leur prise en charge par ce service. Étant donné ces circonstances de fait, le Service Fédéral parvient à la conclusion que les tableaux susmentionnés ont été soustraits dans le cadre de l'opération M et sont demeurés en la possession du Service Ouest. (…)",
+        "source": "Décision du 16 mars 1961 — Archives MEAE 209SUP/506"
+      },
+      "paragraphes_apres": [
+        "Les autorités fédérales allemandes n'excluent pas que le tableau soit parvenu sur le territoire allemand, mais prononcent la clôture de la procédure faute d'indices probants. On peut s'interroger sur le degré de diligence des autorités allemandes, retenant que la preuve de l'implication de l'ERR dans la spoliation ne pouvait être apportée, alors que l'échange intervenu le 25 février 1942 entre Gustav Rochlitz et Hermann Göring est amplement documenté par l'ERR.",
+        "Le chercheur Jürgen Lillteicher (Raub, Recht und Restitution, 2007) avance l'argument que les services de restitution allemands avaient pour instruction d'appliquer la loi de la manière la plus stricte possible. Il explique que le service des restitutions utilisait l'alibi du manque d'archives de l'Opération M comme un outil juridique commode pour rejeter systématiquement les demandes. En classant une œuvre d'art manquante comme un simple bien meuble spolié par l'Opération M — opérée par la Dienststelle Westen ou Service Ouest, dont les archives ont largement disparu —, on peut donc se demander si l'administration allemande ne savait pas pertinemment qu'il serait impossible pour la victime de prouver dans quelle ville exacte d'Allemagne l'œuvre avait fini sa course."
+      ]
+    },
+
+    {
+      "ancre": "renoir",
+      "titre": "Le tableau de Renoir (Meyer 11) : une demande retirée",
+      "paragraphes": [
+        "Dans sa note du 26 janvier 1961, la France indique retirer sa demande de restitution « pour autant que le tableau réclamé soit demeuré en dehors du territoire de la République Fédérale d'Allemagne après sa dernière localisation connue (château de Nikolsburg en Tchécoslovaquie) ». La décision du 23 mars 1961 ne se prononce donc pas sur ce tableau."
+      ]
+    },
+
+    {
+      "ancre": "suite",
+      "titre": "Aller plus loin",
+      "liens": [
+        {
+          "libelle": "Les écarts de dimensions et de titres",
+          "lien": "demarches/ecarts-dimensions-titres.html",
+          "description": "Pourquoi la concordance repose sur un faisceau d'indices et non sur les mesures ou les intitulés."
+        },
+        {
+          "libelle": "Les réclamations auprès des autorités françaises",
+          "lien": "demarches/autorites-francaises.html",
+          "description": "OBIP, Commission de Récupération Artistique et Répertoire des biens spoliés."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+// ============================================================================
+//  FICHIER : site.json
+//  RÔLE    : réglages généraux du site (titre, menu, liste des cinq tableaux,
+//            bas de page). Ce fichier est lu par TOUTES les pages.
+//
+//  COMMENT ÉCRIRE DANS CE FICHIER ?
+//  - Les lignes qui commencent par deux barres obliques (//) sont des
+//    commentaires : elles ne s'affichent jamais sur le site. Vous pouvez en
+//    ajouter autant que vous voulez pour vous y retrouver.
+//  - Tout le texte affiché est écrit entre guillemets droits ("comme ceci").
+//  - Chaque ligne se termine par une virgule, SAUF la dernière d'un bloc.
+//  - Si vous devez écrire un guillemet droit dans un texte, remplacez-le par
+//    des guillemets français : « comme ceci ».
+// ============================================================================
+{
+
+  // --- Identité du site (affichée en haut de chaque page) ------------------
+  "titre_site": "La collection spoliée de Raoul et Yvonne Meyer",
+  "sous_titre_site": "Cinq tableaux jamais localisés",
+
+  // --- Menu de navigation, présent en haut de toutes les pages -------------
+  //     "libelle" = ce qui est écrit dans le menu
+  //     "lien"    = le fichier de la page (ne pas modifier sans raison)
+  "navigation": [
+    { "libelle": "Accueil",              "lien": "index.html" },
+    { "libelle": "Bonnard",              "lien": "tableaux/bonnard.html" },
+    { "libelle": "Marquet",              "lien": "tableaux/marquet.html" },
+    { "libelle": "Modigliani",          "lien": "tableaux/modigliani-soutine.html" },
+    { "libelle": "Renoir",               "lien": "tableaux/renoir.html" },
+    { "libelle": "Pissarro",             "lien": "tableaux/pissarro.html" },
+    { "libelle": "Autorités françaises", "lien": "demarches/autorites-francaises.html" },
+    { "libelle": "Autorités allemandes", "lien": "demarches/autorites-allemandes.html" },
+    { "libelle": "Dimensions et titres", "lien": "demarches/ecarts-dimensions-titres.html" }
+  ],
+
+  // --- Les cinq tableaux ---------------------------------------------------
+  //     Cette liste sert à deux choses :
+  //     1) fabriquer les vignettes cliquables de la page d'accueil ;
+  //     2) fabriquer, en bas de chaque page de tableau, les liens vers les
+  //        quatre autres tableaux.
+  //     Chaque tableau comporte :
+  //       "artiste" : le nom de l'artiste
+  //       "titre"   : le titre de l'œuvre
+  //       "mention" : une courte précision affichée sous le titre
+  //       "image"   : le nom du fichier image placé dans le dossier /images
+  //       "lien"    : la page du tableau
+  "tableaux": [
+    {
+      "artiste": "Pierre Bonnard",
+      "titre": "La femme au canapé",
+      "mention": "ERR Meyer 12 — n° 487 au RBS",
+      "image": "vignette-bonnard.jpg",
+      "lien": "tableaux/bonnard.html"
+    },
+    {
+      "artiste": "Albert Marquet",
+      "titre": "Les bords de la Seine à Paris sous la neige",
+      "mention": "ERR Meyer 6 — n° 6345 au RBS",
+      "image": "vignette-marquet.jpg",
+      "lien": "tableaux/marquet.html"
+    },
+    {
+      "artiste": "Amedeo Modigliani / Chaïm Soutine",
+      "titre": "La porteuse de pain",
+      "mention": "ERR Meyer 9 — n° 4152 au RBS",
+      "image": "vignette-modigliani-soutine.jpg",
+      "lien": "tableaux/modigliani-soutine.html"
+    },
+    {
+      "artiste": "Pierre-Auguste Renoir",
+      "titre": "Le Cannet",
+      "mention": "ERR Meyer 11 — n° 4808 au RBS",
+      "image": "vignette-renoir.jpg",
+      "lien": "tableaux/renoir.html"
+    },
+    {
+      "artiste": "Camille Pissarro",
+      "titre": "La cavée, plein midi",
+      "mention": "ERR UNB 350 puis Meyer 3 — n° 5998 au RBS",
+      "image": "vignette-pissarro.jpg",
+      "lien": "tableaux/pissarro.html"
+    }
+  ],
+
+  // --- Bas de page ---------------------------------------------------------
+  "pied_de_page": {
+    "titre": "À propos de ce site",
+    "paragraphes": [
+      "Ce site documente la spoliation, en 1941, de la collection de peintures de Raoul et Yvonne Meyer et le sort de cinq tableaux jamais localisés à ce jour.",
+      "Les recherches se poursuivent. Toute information relative à ces œuvres est précieuse."
+    ],
+    "mention": "Document de référence : « Les tableaux spoliés de la collection de Raoul et Yvonne Meyer : identification, concordance archivistique et état des recherches », 22 juin 2026, Sandrine Cahn."
+  }
+}

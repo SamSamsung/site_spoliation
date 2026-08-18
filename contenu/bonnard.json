@@ -1,0 +1,117 @@
+// ============================================================================
+//  FICHIER : bonnard.json
+//  RÔLE    : tout le texte et tous les visuels de la page consacrée au
+//            tableau de Pierre Bonnard.
+// ============================================================================
+{
+  "banniere": {
+    "sur_titre": "Tableau non localisé — ERR Meyer 12",
+    "titre": "Pierre Bonnard",
+    "sous_titre": "« La femme au canapé »",
+    "chapo": "Saisi le 11 février 1941 au Crédit Commercial de France, inventorié par l'ERR au Jeu de Paume sous la référence Meyer 12, ce tableau fut vraisemblablement confié au marchand d'art Martin Fabiani. On ignore ce qu'il est advenu de l'œuvre.",
+    "image": "banniere-bonnard.jpg",
+    "credit_image": "Archives Nationales d'Allemagne B 323 914"
+  },
+
+  // --- Fiche d'identification (affichée sous forme de liste à deux colonnes)
+  "fiche": [
+    { "label": "Artiste",              "valeur": "Pierre Bonnard" },
+    { "label": "Titre",                "valeur": "« La femme au canapé »" },
+    { "label": "Autre titre",          "valeur": "« Jeune femme prenant une tasse de thé »" },
+    { "label": "Signature",            "valeur": "Signé en bas à droite" },
+    { "label": "Dimensions",           "valeur": "51 × 56 cm (Archives Nationales d'Allemagne) — 65 × 80 cm (Répertoire des biens spoliés)" },
+    { "label": "Référence ERR",        "valeur": "Meyer 12" },
+    { "label": "Référence RBS",        "valeur": "N° 487" },
+    { "label": "Dossier OBIP",         "valeur": "32.058" },
+    { "label": "Statut",               "valeur": "Non localisé" }
+  ],
+
+  "sections": [
+
+    {
+      "ancre": "identification",
+      "titre": "Identification et arrivée au Jeu de Paume",
+      "liste": [
+        "Aussi référencé sous le nom « Jeune femme prenant une tasse de thé ».",
+        "Signé en bas à droite.",
+        "Dimensions : 51 × 56 cm (Archives Nationales d'Allemagne) et 65 × 80 cm (Répertoire des biens spoliés).",
+        "Le tableau est transféré au Jeu de Paume le 11 février 1941.",
+        "Il est photographié et inventorié par l'ERR à son arrivée au musée du Jeu de Paume sous la référence Meyer 12."
+      ],
+      "visuels": [
+        {
+          "fichier": "bonnard-fiche-inventaire-err-recto.jpg",
+          "legende": "Recto de la fiche d'inventaire comportant la photographie du tableau de Pierre Bonnard.",
+          "credit": "Archives Nationales d'Allemagne B 323 914"
+        },
+        {
+          "fichier": "bonnard-fiche-inventaire-err-verso.jpg",
+          "legende": "Verso de la fiche d'inventaire du tableau de Pierre Bonnard.",
+          "credit": "Archives Nationales d'Allemagne B 323 914"
+        }
+      ]
+    },
+
+    {
+      "ancre": "emballage-1943",
+      "titre": "L'opération d'emballage de juillet 1943",
+      "paragraphes": [
+        "On retrouve la trace de ce tableau dans une annotation manuscrite apportée par les autorités allemandes en charge des restitutions, indiquant que le tableau aurait fait l'objet de l'opération d'emballage de juillet 1943, tendant à indiquer que le tableau était destiné à être transporté en Allemagne."
+      ],
+      "visuels": [
+        {
+          "fichier": "bonnard-note-err-209sup-506.jpg",
+          "legende": "Note administrative relative au tableau de Pierre Bonnard.",
+          "credit": "Archives MEAE 209SUP/506",
+          "traduction": "Traduction libre de la mention dactylographiée : « Le tableau fut saisi le 11.2.1941 par le Devisenschutzkommando au Crédit Commercial de France et parvint à l'ERR sous la désignation “Meyer n° 12”. Son sort demeure inconnu. » — Traduction libre de la mention manuscrite : « Emballage Action Peintures Modernes de juillet 1943. Groupe 1 – Imp. 2-A-7. »"
+        }
+      ]
+    },
+
+    {
+      "ancre": "echange-fabiani",
+      "titre": "Un tableau envisagé pour un échange",
+      "paragraphes": [
+        "Il semblerait qu'en définitive, le tableau ait été envisagé pour un échange.",
+        "Effectivement, la mention manuscrite apposée par l'ERR au verso de la photographie du tableau (« B19 Bonnard Fabiani ») indique que le tableau aurait finalement été confié au marchand d'art français Martin Fabiani. Celui-ci fournissait, en contrepartie, des tableaux de maîtres anciens ou des œuvres classiques jugées conformes à l'idéologie nazie."
+      ],
+      "source_en_ligne": {
+        "libelle": "Fiche du tableau sur le site ERR Project",
+        "url": "https://www.errproject.org/jeudepaume/card_view.php?CardId=4791"
+      },
+      "visuels": [
+        {
+          "fichier": "bonnard-liste-echanges-err-209sup-219.jpg",
+          "legende": "« Tableaux ayant fait l'objet d'échanges entre l'E.R.R. et des marchands tels que Rochlitz, etc… »",
+          "credit": "Archives MEAE 209SUP/219"
+        },
+        {
+          "fichier": "bonnard-carton-fabiani-recto.jpg",
+          "legende": "Recto du carton d'inventaire avec la photographie du tableau.",
+          "credit": "Archives Nationales d'Allemagne B 323 854 (collection Fabiani)"
+        },
+        {
+          "fichier": "bonnard-carton-fabiani-verso.jpg",
+          "legende": "Verso du carton d'inventaire où figurent les annotations manuscrites apportées par l'ERR : « Fabiani Bonnard ».",
+          "credit": "Archives Nationales d'Allemagne B 323 854 (collection Fabiani)"
+        }
+      ]
+    },
+
+    {
+      "ancre": "etat-des-recherches",
+      "titre": "État des recherches",
+      "paragraphes": [
+        "On ignore ce qu'il est advenu du tableau de Pierre Bonnard. Les dernières informations recueillies sur ce tableau figurent dans la décision du 16 mars 1961 rendue par les autorités allemandes sur la demande d'indemnisation de Raoul Meyer.",
+        "Cette décision est la seule, parmi les cinq œuvres, à prononcer un rejet pur et simple : les autorités ouest-allemandes ont considéré que le tableau ne pouvait se trouver en Allemagne."
+      ],
+      "liens": [
+        {
+          "libelle": "Lire la décision du 16 mars 1961",
+          "lien": "demarches/autorites-allemandes.html",
+          "description": "Le raisonnement des autorités ouest-allemandes, tableau par tableau."
+        }
+      ]
+    }
+  ]
+}

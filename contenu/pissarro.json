@@ -1,0 +1,213 @@
+// ============================================================================
+//  FICHIER : pissarro.json
+//  RÔLE    : tout le texte et tous les visuels de la page consacrée au
+//            tableau de Camille Pissarro.
+// ============================================================================
+{
+  "banniere": {
+    "sur_titre": "Tableau non localisé — ERR UNB 350 puis Meyer 3",
+    "titre": "Camille Pissarro",
+    "sous_titre": "« La cavée, plein midi » ou « La cavée à Eragny, plein midi »",
+    "chapo": "Acquis par Yvonne Meyer en 1932, ce tableau signé et daté 1887 est spolié en février 1941, puis échangé le 25 février 1942 par l'ERR avec le marchand Gustav Rochlitz, pour le compte d'Hermann Göring. Rochlitz affirme l'avoir perdu lors d'un transport vers Baden-Baden en juin 1944 : la trace du tableau s'arrête là.",
+    "image": "banniere-pissarro.jpg",
+    "credit_image": "Photo Durand-Ruel — catalogue de la vente Gaston Lévy, 17 novembre 1932"
+  },
+
+  "fiche": [
+    { "label": "Artiste",         "valeur": "Camille Pissarro" },
+    { "label": "Titre",           "valeur": "« La cavée, plein midi »" },
+    { "label": "Autres titres",   "valeur": "« La cavée à Eragny », « Grands chemins avec paysans », « Fermiers allant au travail », « Fermiers sur une route »" },
+    { "label": "Signature",       "valeur": "Signé en bas à droite et daté 1887" },
+    { "label": "Dimensions",      "valeur": "73 × 92 cm (catalogue) — 73 × 95 cm (Répertoire des biens spoliés)" },
+    { "label": "Référence ERR",   "valeur": "UNB 350, puis Meyer 3" },
+    { "label": "Référence RBS",   "valeur": "N° 5998" },
+    { "label": "Catalogue raisonné", "valeur": "PDRS 847 (Wildenstein Plattner Institute, 2005)" },
+    { "label": "Dossier OBIP",    "valeur": "32.058" },
+    { "label": "Statut",          "valeur": "Non localisé" }
+  ],
+
+  "sections": [
+
+    {
+      "ancre": "identification",
+      "titre": "Identification et pluralité des titres",
+      "liste": [
+        "Signé en bas et à droite et daté 1887.",
+        "Dimensions du tableau : 73 × 92 cm (dans le catalogue) et 73 × 95 cm (dans le RBS).",
+        "Dans les dossiers français, le tableau est référencé sous plusieurs intitulés : « la cavée à Eragny », « grands chemins avec paysans », « fermiers allant au travail » (mal transcrit par « femmes »), « fermiers sur une route »."
+      ],
+      "visuels": [
+        {
+          "fichier": "pissarro-intitules-dossiers-francais-209sup-219.jpg",
+          "legende": "Les différents intitulés sous lesquels le tableau est référencé dans les dossiers français.",
+          "credit": "Archives MEAE 209SUP/219"
+        }
+      ]
+    },
+
+    {
+      "ancre": "provenance",
+      "titre": "Provenance : de Durand-Ruel à Yvonne Meyer",
+      "liste": [
+        "Le tableau est d'abord vendu par Camille Pissarro à son marchand Paul Durand-Ruel en 1888 ; la galerie Durand-Ruel le vend ensuite à Gaston Lévy le 23 octobre 1930.",
+        "Yvonne Meyer en fait l'acquisition à la vente aux enchères du 17 novembre 1932 pour un montant de 34 000 francs. Le tableau porte la référence 93.",
+        "1939 : le tableau apparaît dans le catalogue raisonné de l'œuvre de Camille Pissarro, publié en 1939 par l'historien de l'art Lionello Venturi et Ludovic Rodo Pissarro."
+      ],
+      "visuels": [
+        {
+          "fichier": "pissarro-catalogue-vente-levy-1932-couverture.jpg",
+          "legende": "Couverture du catalogue de la vente de la collection de Monsieur G. L. (Gaston Lévy), Hôtel Drouot, salle n° 6, jeudi 17 novembre 1932. Commissaire-priseur : Me Alph. Bellier ; expert : M. Jos. Hessel.",
+          "credit": "Catalogue de la vente du 17 novembre 1932"
+        },
+        {
+          "fichier": "pissarro-catalogue-vente-levy-1932-notice.jpg",
+          "legende": "Notice n° 93 du catalogue de la vente de la collection de Gaston Lévy, 17 novembre 1932.",
+          "credit": "Photo Durand-Ruel — extrait du catalogue de la vente du 17 novembre 1932"
+        },
+        {
+          "fichier": "pissarro-catalogue-raisonne-venturi-1939.jpg",
+          "legende": "Notice du tableau dans le catalogue raisonné de Lionello Venturi et Ludovic Rodo Pissarro, 1939.",
+          "credit": "Catalogue raisonné Venturi / Ludovic Rodo Pissarro, 1939"
+        }
+      ]
+    },
+
+    {
+      "ancre": "unb-350",
+      "titre": "Février 1941 : d'UNB 350 à Meyer 3",
+      "paragraphes": [
+        "En février 1941, le tableau est spolié par le D.S.K. et emmené au musée du Jeu de Paume. L'ERR le référence sous la référence UNB 350 (pour Unbekannt, « inconnu »).",
+        "Le tableau prend ensuite la cote Meyer 3, ce qui indique qu'après avoir été dans la série des collections non identifiées à son arrivée au musée du Jeu de Paume, il a été ensuite ou parallèlement rattaché à l'inventaire de Raoul et Yvonne Meyer.",
+        "À son arrivée de Mont-de-Marsan, le tableau est transporté au musée du Jeu de Paume où sont entreposés les tableaux considérés comme « étant les meilleurs des tableaux modernes » saisis par l'ERR. Les tableaux moins considérés seront entreposés au Louvre — certains de ces tableaux seront détruits lors de l'autodafé du jardin des Tuileries de juillet 1943. Dans ses notes, Rose Valland recense expressément le tableau parmi les tableaux entreposés au musée du Jeu de Paume."
+      ],
+      "visuels": [
+        {
+          "fichier": "pissarro-fiche-unb350-323-297.jpg",
+          "legende": "Fiche d'inventaire de l'ERR sous la référence UNB 350.",
+          "credit": "Archives Nationales d'Allemagne 323 297"
+        },
+        {
+          "fichier": "pissarro-lien-unb350-meyer3-323-297.jpg",
+          "legende": "Document faisant le lien entre la référence UNB 350 et la référence Meyer 3.",
+          "credit": "Archives Nationales d'Allemagne 323 297",
+          "traduction": "Traduction libre des annotations manuscrites : « Échange 14 ERR – Rochlitz (pour Göring). Disparu lors du transport de Paris à Baden-Baden, juin 1944. Probablement (doublement barré) identique à Raoul Meyer 3. » — Traduction libre des mentions dactylographiées : « UNB 350 Camille Pissarro (1830-1903). Route de campagne avec paysans ; sur le côté gauche, petite maison dans un jardin. À l'arrière-plan, groupe d'arbres. Tableau d'été. Huile sur toile. Format horizontal. Signé en bas à droite : C. Pissarro 1887. »"
+        },
+        {
+          "fichier": "pissarro-inventaire-valland-jeu-de-paume.jpg",
+          "legende": "Inventaire réalisé par Rose Valland : le tableau est recensé parmi les œuvres entreposées au musée du Jeu de Paume.",
+          "credit": "Archives MEAE 209SUP/406"
+        }
+      ]
+    },
+
+    {
+      "ancre": "echange-rochlitz",
+      "titre": "25 février 1942 : l'échange n° 14 avec Gustav Rochlitz",
+      "paragraphes": [
+        "Le 25 février 1942, Bruno Lohse, l'agent de Göring à Paris, agit comme intermédiaire central des échanges opérés par Hermann Göring avec des marchands. Il facilite ainsi l'échange de « La cavée » contre un tableau du peintre Roelant Savery intitulé « L'arche de Noé », qui lui est procuré par le marchand d'art Gustav Rochlitz.",
+        "L'échange fait l'objet d'un contrat entre l'ERR et le marchand ; le contrat, difficilement lisible, est archivé dans les Archives Nationales d'Allemagne sous la cote 323 72. Deux autres œuvres font l'objet de cet échange : un tableau de Gauguin, « Deux jeunes filles à Tahiti » (restitué à Paul Rosenberg en 1946), et un autre tableau de Pissarro, « Vaches dans un ruisseau devant village » (UNB 351) — ce tableau, spolié en même temps que celui de Raoul Meyer, sera restitué à Max Heilbronn en 1947.",
+        "Cet échange est également visé par Rose Valland dans son enquête sur l'ERR, après avoir évoqué l'échange précédent du 2 février 1942. On notera qu'elle soupçonne que le tableau de Pissarro UNB 350 échangé ait été vendu en France ou en Suisse par Gustav Rochlitz.",
+        "D'après les notes de Rose Valland, Bruno Lohse a emporté le tableau du Jeu de Paume le 3 mars 1943, sans doute pour le remettre à Gustav Rochlitz, selon l'accord d'échange conclu entre les deux hommes. On notera que les dimensions du tableau ne correspondent pas, mais que la date du tableau est exacte : Rose Valland vise bien le tableau « À la campagne », signé et daté de 1887, quand elle évoque l'échange du 25 février 1942.",
+        "Il convient de noter que le tableau figure cependant dans l'inventaire établi par Rose Valland des tableaux entreposés au Jeu de Paume à la date du 10 mars 1942."
+      ],
+      "visuels": [
+        {
+          "fichier": "pissarro-contrat-echange-rochlitz-323-72.jpg",
+          "legende": "Document relatif à l'échange n° 14 entre l'ERR et la galerie Gustav Rochlitz.",
+          "credit": "Archives Nationales d'Allemagne 323 72",
+          "traduction": "Traduction libre : « 14. Échange (avec la galerie d'art G. Rochlitz, Paris, le 25 février 1942 pour H. Göring — MFA&A 252/692 ; Rapport Göring Att. 5 page 35, n° d'ordre 61-63). 61. Gauguin coll. Slg. Rosenberg Bordeaux 50 — De Rochlitz vers Hohenschwangau/Füssen. 62. Pissarro coll. UNB 351 — De Rochlitz vers Mülhofen près de Meersburg (Rapport Rochlitz p. 10). 63. Pissarro coll. UNB 350 — Perdu lors du transport de Paris vers Baden-Baden en juin 1944 (Rapport Rochlitz p. 11). a) R. Savery, L'arche de Noé, bois, M. Nr. 6779 RM 1217 (vers Paris le 21.8.1948). »"
+        },
+        {
+          "fichier": "pissarro-enquete-valland-echange-209sup-406.jpg",
+          "legende": "Enquête de Rose Valland sur l'ERR : l'échange du 25 février 1942 et le soupçon d'une vente en France ou en Suisse par Gustav Rochlitz.",
+          "credit": "Archives MEAE 209SUP/406"
+        },
+        {
+          "fichier": "pissarro-notes-valland-lohse.jpg",
+          "legende": "Notes de Rose Valland relatives au retrait du tableau du Jeu de Paume par Bruno Lohse.",
+          "credit": "Archives Nationales, Pierrefitte-sur-Seine, cote 20144792/276 — et Archives MEAE 209SUP/917"
+        },
+        {
+          "fichier": "pissarro-documentation-francaise-echange-14.jpg",
+          "legende": "L'échange n° 14 du 25 février 1942 est attesté par de nombreux documents. On en trouve trace dans la documentation française : la lettre « R » en rouge signifie que le tableau a fait l'objet d'une restitution.",
+          "credit": "Archives du MEAE 209SUP/2019"
+        },
+        {
+          "fichier": "pissarro-inventaire-jeu-de-paume-10-03-1942.jpg",
+          "legende": "Inventaire des tableaux entreposés au Jeu de Paume à la date du 10 mars 1942 : le tableau y figure encore.",
+          "credit": "Archives MEAE 209SUP/406"
+        },
+        {
+          "fichier": "pissarro-hypothese-suisse-valland.jpg",
+          "legende": "Dans son enquête, Rose Valland fait l'hypothèse que le tableau a pu être transporté en Suisse par Gustav Rochlitz.",
+          "credit": "Archives MEAE 206SUP/406"
+        }
+      ]
+    },
+
+    {
+      "ancre": "rochlitz-1945",
+      "titre": "1945 : les interrogatoires de Gustav Rochlitz",
+      "paragraphes": [
+        "En 1945, dans ses interrogatoires par la Art Looting Investigation Unit (ALIU), Gustav Rochlitz déclare qu'il n'a pas vendu le tableau de Pissarro échangé. Il prétend que le tableau a disparu alors qu'il l'avait transféré vers une cache à Baden-Baden en juin 1944.",
+        "Parmi les tableaux décrits par Gustav Rochlitz, on retrouve le tableau de Camille Pissarro intitulé « Fermiers sur une route de campagne » (n° 1 dans la liste), avec la référence de l'échange n° 14 du 25 février 1942.",
+        "La trace du tableau de Pissarro n'est plus documentée après.",
+        "Il est intéressant de noter que plusieurs œuvres pourtant déclarées perdues par Gustav Rochlitz dans le transport de juin 1944 ont pu être retrouvées et restituées aux ayants droit. Parmi les treize autres œuvres listées par Gustav Rochlitz comme perdues pendant le transport de juin 1944, sept œuvres ont été retrouvées, restituées ou sont réapparues après-guerre.",
+        "C'est le cas de l'aquarelle de Pablo Picasso, « Lutte de centaures » (n° 5 dans la liste), qui a été découverte dans les caves de la sûreté de Lörrach, en Allemagne, en 1949. C'est aussi le cas du tableau de Matisse, « Femme avec un turban » (n° 9 dans la liste), retrouvé parmi les tableaux de Cornelius Gurlitt en 2012 et restitué aux ayants droit de Paul Rosenberg en 2015.",
+        "Il est donc possible que le tableau de Camille Pissarro ait suivi, jusqu'à un certain point, le même sort que l'un de ces tableaux. Il est en tout cas certain que Gustav Rochlitz n'a pas dit la vérité quand il a affirmé qu'il avait envoyé les quatorze tableaux à Baden-Baden et qu'ils se seraient perdus lors du transport."
+      ],
+      "visuels": [
+        {
+          "fichier": "pissarro-interrogatoire-rochlitz-209sup-417-1.jpg",
+          "legende": "Extraits du rapport d'interrogatoire n° 4 mené par les Américains : Gustav Rochlitz déclare ne pas avoir vendu le tableau de Pissarro échangé.",
+          "credit": "Archives MEAE 209SUP/417"
+        },
+        {
+          "fichier": "pissarro-interrogatoire-rochlitz-209sup-417-2.jpg",
+          "legende": "Gustav Rochlitz prétend que le tableau a disparu alors qu'il l'avait transféré vers une cache à Baden-Baden en juin 1944.",
+          "credit": "Archives MEAE 209SUP/417"
+        },
+        {
+          "fichier": "pissarro-rapport-aliu-n4-liste-quatorze-tableaux.jpg",
+          "legende": "Liste des quatorze tableaux déclarés perdus par Gustav Rochlitz. Le Pissarro « Fermiers sur une route de campagne » y figure au n° 1, avec la référence de l'échange n° 14 du 25 février 1942.",
+          "credit": "Extrait du rapport d'interrogatoire détaillé n° 4 concernant Gustav Rochlitz, 1945 — RA717 d4"
+        }
+      ]
+    },
+
+    {
+      "ancre": "recherches-recentes",
+      "titre": "Recherches récentes : catalogue critique et dossier Gurlitt",
+      "paragraphes": [
+        "En 2005, le tableau fait l'objet d'une publication sous le numéro 847 par le Wildenstein Plattner Institute, Joachim Pissarro et Claire Durand-Ruel Snollaerts, dans le catalogue critique des peintures de Camille Pissarro. Le tableau prend la référence PDRS 847. Les auteurs précisent, dans la section relative à la provenance du tableau, qu'il a été spolié à Raoul Meyer et qu'il n'est pas localisé.",
+        "En 2015, après la découverte d'œuvres cachées chez Cornelius Gurlitt en 2012, les ayants droit de Raoul Meyer ont saisi la mission de recherche afin de vérifier si plusieurs œuvres spoliées de sa collection — dont deux Pissarro, « Paysage d'été, plein midi, la cavée » et « La Bergère » — figuraient parmi les œuvres retrouvées chez Cornelius Gurlitt. D'après la base Proveana, aucune correspondance n'a été trouvée, et une réponse négative leur a été donnée ; le dossier a été clos le 14 septembre 2015."
+      ],
+      "source_en_ligne": {
+        "libelle": "Dossier Proveana relatif au Pissarro (PDF)",
+        "url": "https://www.proveana.de/de/system/files?file=attachment/document/20201012_152500_0001/BG478154_Pissarro.pdf"
+      },
+      "visuels": [
+        {
+          "fichier": "pissarro-catalogue-critique-pdrs-847.jpg",
+          "legende": "Notice PDRS 847 du catalogue critique des peintures de Camille Pissarro, 2005 : la provenance mentionne la spoliation de Raoul Meyer et l'absence de localisation.",
+          "credit": "Wildenstein Plattner Institute — Joachim Pissarro et Claire Durand-Ruel Snollaerts, 2005"
+        }
+      ]
+    },
+
+    {
+      "ancre": "etat-des-recherches",
+      "titre": "État des recherches",
+      "paragraphes": [
+        "Les autorités fédérales allemandes ont relevé que le tableau ne figure pas dans les inventaires de l'ERR et ont prononcé, le 16 mars 1961, la clôture de la procédure faute d'indices probants — alors même que l'échange du 25 février 1942 entre Gustav Rochlitz et Hermann Göring est amplement documenté par l'ERR."
+      ],
+      "liens": [
+        {
+          "libelle": "Lire la décision du 16 mars 1961",
+          "lien": "demarches/autorites-allemandes.html",
+          "description": "Le raisonnement des autorités ouest-allemandes, tableau par tableau."
+        }
+      ]
+    }
+  ]
+}

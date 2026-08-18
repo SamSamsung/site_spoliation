@@ -1,0 +1,205 @@
+// ============================================================================
+//  FICHIER : demarches-francaises.json
+//  RÔLE    : page « Les réclamations auprès des autorités françaises ».
+// ============================================================================
+{
+  "banniere": {
+    "sur_titre": "Le traitement administratif des réclamations — 1/3",
+    "titre": "Les réclamations auprès des autorités françaises",
+    "chapo": "Dès juin 1945, Raoul Meyer saisit l'Office des Biens et Intérêts privés. L'inscription des cinq œuvres au Répertoire des biens spoliés vaut reconnaissance administrative officielle de leur rattachement au processus français de recherche et de restitution.",
+    "image": "banniere-demarches-francaises.jpg",
+    "credit_image": "Archives familiales"
+  },
+
+  "sections": [
+
+    {
+      "ancre": "obip",
+      "titre": "La saisine de l'OBIP, juin 1945",
+      "paragraphes": [
+        "Dès juin 1945, Raoul Meyer saisit l'Office des Biens et Intérêts privés (OBIP) d'une demande de restitution des meubles de sa villa du Cap d'Antibes et de sa collection spoliée et non restituée — six de ses tableaux lui ont été restitués à la date du 28 juin 1945 par le Service de Restitution des Biens des Victimes des Lois et Mesures de Spoliation. Le dossier prend la référence 32.058. Ce faisant, il écarte la voie judiciaire, jugée plus longue, pour opter pour la voie administrative.",
+        "Raoul Meyer saisit également la Commission de Récupération Artistique (CRA) et la Préfecture des Landes, eu égard au lieu de la spoliation."
+      ],
+      "visuels": [
+        {
+          "fichier": "obip-declaration-raoul-meyer-1945-09-01.jpg",
+          "legende": "Annexe de la déclaration de Raoul Meyer concernant certaines catégories de biens et valeurs auprès de l'Office des Biens et Intérêts Privés (OBIP), en date du 1ᵉʳ septembre 1945.",
+          "credit": "Archives familiales"
+        }
+      ]
+    },
+
+    {
+      "ancre": "rbs",
+      "titre": "Le Répertoire des biens spoliés (1947-1949)",
+      "paragraphes": [
+        "Le Bureau Central des Restitutions (BCR), basé à Berlin et travaillant en étroite collaboration avec l'OBIP, publie le Répertoire des biens spoliés en France durant la guerre 1939-1945 (RBS) entre 1947 et 1949. Ce monumental catalogue, divisé par volumes (tableaux, sculptures, meubles, livres, etc.), répertorie chaque objet disparu avec sa description textuelle et, quand cela est possible, sa photographie.",
+        "Le RBS est distribué aux marchands d'art, aux experts et aux douanes, l'objectif étant de rechercher et d'identifier les objets et œuvres dont il est interdit de faire commerce en raison de la possession illégale de leur détenteur.",
+        "L'inscription des œuvres au RBS constitue une reconnaissance administrative officielle de leur rattachement au processus français de recherche et de restitution des biens spoliés. Elle atteste que l'État français les a traitées comme des biens spoliés à rechercher ou à restituer."
+      ],
+      "encadre": {
+        "titre": "Ce que contient chaque ligne du RBS",
+        "liste": [
+          "Numéro d'ordre de la publication, précédé parfois d'un astérisque (*) signalant les œuvres jugées importantes.",
+          "Numéro du dossier de l'OBIP — ce numéro peut correspondre à plusieurs lignes si la demande de restitution comporte plusieurs œuvres. Le numéro de dossier à l'OBIP de Raoul et Yvonne Meyer est le 32.058.",
+          "Nom de l'artiste.",
+          "Description de l'objet, avec parfois l'indication de la technique et l'indication de la présence d'une photo dans la publication.",
+          "Dimensions.",
+          "Nom du propriétaire."
+        ]
+      },
+      "source_en_ligne": {
+        "libelle": "Le Répertoire des biens spoliés — ministère de la Culture",
+        "url": "https://www.culture.gouv.fr/nous-connaitre/organisation-du-ministere/le-secretariat-general/mission-de-recherche-et-de-restitution-des-biens-culturels-spolies-entre-1933-et-1945/recherche-de-provenance-outils-et-methode/repertoire-des-biens-spolies-rbs"
+      }
+    },
+
+    {
+      "ancre": "annotations",
+      "titre": "Lire les annotations manuscrites",
+      "paragraphes": [
+        "Les annotations manuscrites portées sur les feuillets du RBS révèlent le statut des réclamations au cours des procédures, à la date du 24 avril 1970. Lorsque l'œuvre a été restituée, les réclamations sont rayées en rouge, souvent complétées d'un « R » majuscule ainsi que de la date de restitution. Les réclamations sont rayées en bleu lorsqu'aucune restitution n'a été réalisée à la date de l'annotation — en l'occurrence le 24 avril 1970."
+      ],
+      "citation": {
+        "texte": "Ces mentions barrées ne signifient pas « que la spoliation était mise en cause, mais que l'administration française prenait acte du caractère infructueux des recherches. La clôture de la procédure était prononcée par le “Bundesamt für aüssere Restitutionen” (Office fédéral des Restitutions), créé le 8 juin 1955 au sein du ministère fédéral des Finances, et non par les services français qui ne faisaient qu'en prendre note. Cette formalité permettait aux requérants de faire une demande d'indemnisation. »",
+        "source": "Site du ministère de la Culture"
+      }
+    },
+
+    {
+      "ancre": "b323-429",
+      "titre": "Le fonds B 323/429 : une table de concordance",
+      "paragraphes": [
+        "Pour examiner la concordance entre les sources, il convient d'examiner les œuvres listées dans le RBS à la lumière des dossiers de traitement des demandes de restitution provenant de France par les autorités allemandes. Pour cela, on s'appuiera sur le dossier BArch B 323/429, relevant du fonds B 323 des Archives Nationales d'Allemagne.",
+        "Le dossier, rédigé en allemand, reprend les références françaises du RBS. Pour la collection Raoul Meyer, ce dossier doit être lu comme un dossier administratif allemand de traitement des demandes françaises, susceptible de faire le lien entre les numéros du RBS et les numéros allemands ERR de type « Meyer 6 ». Partant, ce lien permet également d'établir la concordance entre les œuvres listées au RBS et les photographies des dossiers de l'ERR.",
+        "Ce document en allemand est intitulé « Ergänzung des Verzeichnisses “Répertoire des biens spoliés en France durant la guerre 1939-1945”. — Gemälde, Tapisserien und Skulpturen (“Complément”) »."
+      ],
+      "encadre": {
+        "titre": "Les annotations manuscrites du dossier B 323/429",
+        "liste": [
+          "« Z » pour « Zurückgezogen » : retiré.",
+          "« E » pour « Eingestellt » : procédure close.",
+          "« A » pour « Antrag abgelehnt » : rejet."
+        ]
+      }
+    },
+
+    {
+      "ancre": "rbs-bonnard",
+      "titre": "Pierre Bonnard — « Jeune femme prenant une tasse de thé » (n° 487 au RBS)",
+      "visuels": [
+        {
+          "fichier": "rbs-bonnard-page-45.jpg",
+          "legende": "Extrait du Répertoire des biens spoliés, page 45.",
+          "credit": "Répertoire des biens spoliés en France durant la guerre 1939-1945"
+        },
+        {
+          "fichier": "b323-429-bonnard.jpg",
+          "legende": "Extrait des archives de l'Administration fiduciaire des biens culturels auprès de la Direction régionale des finances de Munich.",
+          "credit": "Archives Nationales d'Allemagne, B 323/429",
+          "traduction": "Traduction libre : « Confisqué le 11 février 1941 par le Devisenschutzkommando au Crédit Commercial de France, appartenant à Mme Raoul Meyer, puis remis à l'ERR (Meyer n° 12) ; on ignore où il se trouve actuellement. »"
+        }
+      ]
+    },
+
+    {
+      "ancre": "rbs-marquet",
+      "titre": "Albert Marquet — « Les bords de la Seine à Paris sous la neige » (n° 6345 au RBS)",
+      "visuels": [
+        {
+          "fichier": "rbs-marquet-page-282.jpg",
+          "legende": "Extrait du Répertoire des biens spoliés, page 282.",
+          "credit": "Répertoire des biens spoliés en France durant la guerre 1939-1945"
+        },
+        {
+          "fichier": "b323-429-marquet.jpg",
+          "legende": "Extrait des archives de l'Administration fiduciaire des biens culturels auprès de la Direction régionale des finances de Munich.",
+          "credit": "Archives Nationales d'Allemagne, B 323/429",
+          "traduction": "Traduction libre : « Confisqué le 11 février 1941 par le Devisenschutzkommando au Crédit Commercial de France, appartenant à Mme Raoul Meyer, puis remis à l'ERR (Meyer n° 6). Dans l'inventaire de l'ERR, la mention manuscrite suivante a été raturée : “De retour à M.-Aktion pour vente.” On ignore où il se trouve actuellement. »"
+        }
+      ]
+    },
+
+    {
+      "ancre": "rbs-modigliani",
+      "titre": "Amedeo Modigliani — « La porteuse de pain » (n° 4152 au RBS)",
+      "visuels": [
+        {
+          "fichier": "rbs-modigliani-page-45.jpg",
+          "legende": "Extrait du Répertoire des biens spoliés, page 45.",
+          "credit": "Répertoire des biens spoliés en France durant la guerre 1939-1945"
+        },
+        {
+          "fichier": "b323-429-modigliani.jpg",
+          "legende": "Extrait des archives de l'Administration fiduciaire des biens culturels auprès de la Direction régionale des finances de Munich.",
+          "credit": "Archives Nationales d'Allemagne, B 323/429",
+          "traduction": "Traduction libre : « Confisqué le 11 février 1941 par le Devisenschutzkommando au Crédit Commercial de France, appartenant à Mme Raoul Meyer, puis remis à l'ERR (Meyer n° 9) ; note ajoutée dans l'inventaire ERR. Suppression de la mention : “De retour à M.-Aktion pour vente.” On ignore où il se trouve actuellement. »"
+        }
+      ]
+    },
+
+    {
+      "ancre": "rbs-renoir",
+      "titre": "Pierre-Auguste Renoir — « Paysage avec des jeunes femmes et un bébé » (n° 4808 au RBS)",
+      "visuels": [
+        {
+          "fichier": "rbs-renoir-page-216.jpg",
+          "legende": "Extrait du Répertoire des biens spoliés, page 216.",
+          "credit": "Répertoire des biens spoliés en France durant la guerre 1939-1945"
+        },
+        {
+          "fichier": "b323-429-renoir.jpg",
+          "legende": "Extrait des archives de l'Administration fiduciaire des biens culturels auprès de la Direction régionale des finances de Munich.",
+          "credit": "Archives Nationales d'Allemagne, B 323/429",
+          "traduction": "Traduction libre : « Confisqué le 11 février 1941 par le Devisenschutzkommando au Crédit Commercial de France, appartenant à Mme Raoul Meyer, puis remis à l'ERR (Meyer n° 9) ; le 15 novembre 1943, de Paris vers le dépôt ERR du château de Nikolsburg (République tchèque). On ignore où il se trouve actuellement. »"
+        }
+      ]
+    },
+
+    {
+      "ancre": "rbs-pissarro",
+      "titre": "Camille Pissarro — « La cavée, paysage d'été en plein midi » (n° 5998 au RBS)",
+      "paragraphes": [
+        "Pour ce tableau, les archives de l'Administration fiduciaire des biens culturels auprès de la Direction régionale des finances de Munich (Archives Nationales d'Allemagne, B 323/429) ne font pas mention de la référence Meyer 3, et n'apportent donc pas la corrélation recherchée.",
+        "Toutefois, la démonstration de la coïncidence entre le visuel du tableau et sa propriété par Raoul Meyer est établie par un document conservé aux archives de la récupération artistique en Allemagne, dont une copie est archivée à la bibliothèque du musée d'Orsay — voir la mention « coll. R. Meyer Nov 1932 »."
+      ],
+      "visuels": [
+        {
+          "fichier": "rbs-pissarro-page-266.jpg",
+          "legende": "Extrait du Répertoire des biens spoliés, page 266.",
+          "credit": "Répertoire des biens spoliés en France durant la guerre 1939-1945"
+        },
+        {
+          "fichier": "b323-429-pissarro.jpg",
+          "legende": "Extrait des archives de l'Administration fiduciaire des biens culturels auprès de la Direction régionale des finances de Munich : la référence Meyer 3 n'y figure pas.",
+          "credit": "Archives Nationales d'Allemagne, B 323/429"
+        },
+        {
+          "fichier": "pissarro-coll-r-meyer-nov-1932-orsay.jpg",
+          "legende": "Document portant la mention « coll. R. Meyer Nov 1932 », établissant la coïncidence entre le visuel du tableau et sa propriété par Raoul Meyer.",
+          "credit": "Archives de la récupération artistique en Allemagne — copie archivée à la bibliothèque du musée d'Orsay"
+        }
+      ]
+    },
+
+    {
+      "ancre": "suite",
+      "titre": "La suite du parcours administratif",
+      "paragraphes": [
+        "Bien que la CRA puis l'OBIP aient été saisis des demandes de restitution de Raoul Meyer, ce dernier ne pouvait en attendre la moindre indemnisation : le mandat de ces institutions excluait tout versement de compensation. C'est vers l'Allemagne que les victimes françaises devaient se tourner."
+      ],
+      "liens": [
+        {
+          "libelle": "Les réclamations auprès de l'État allemand",
+          "lien": "demarches/autorites-allemandes.html",
+          "description": "La loi BRüG, la décision du 16 mars 1961 et son raisonnement, tableau par tableau."
+        },
+        {
+          "libelle": "Les écarts de dimensions et de titres",
+          "lien": "demarches/ecarts-dimensions-titres.html",
+          "description": "Pourquoi la concordance repose sur un faisceau d'indices."
+        }
+      ]
+    }
+  ]
+}

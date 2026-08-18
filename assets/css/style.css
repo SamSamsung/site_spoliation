@@ -1,0 +1,849 @@
+/* ==========================================================================
+   FEUILLE DE STYLE DU SITE
+   « La collection spoliée de Raoul et Yvonne Meyer »
+
+   ATTENTION : ce fichier gère uniquement l'APPARENCE du site (couleurs,
+   tailles, espacements). Il ne contient aucun texte du site.
+   Pour modifier un texte ou une image, ouvrez les fichiers du dossier
+   /contenu — jamais ce fichier-ci.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Réglages généraux et palette
+   -------------------------------------------------------------------------- */
+
+:root {
+  /* Couleurs — une palette neutre et une seule couleur d'accent */
+  --papier:        #faf8f4;
+  --papier-fonce:  #f1ede5;
+  --surface:       #ffffff;
+  --encre:         #1a1917;
+  --encre-douce:   #4a4640;
+  --encre-legere:  #767068;
+  --filet:         #ddd7cb;
+  --accent:        #8c2f1f;
+  --accent-clair:  #b8543f;
+  --sombre:        #211f1c;
+
+  /* Typographies */
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
+           "Times New Roman", serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+
+  /* Largeurs de lecture */
+  --largeur-texte: 40rem;
+  --largeur-large: 62rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  font-size: 17px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+body {
+  margin: 0;
+  background: var(--papier);
+  color: var(--encre);
+  font-family: var(--serif);
+  line-height: 1.68;
+  text-rendering: optimizeLegibility;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+a:hover { color: var(--accent-clair); }
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* Lien d'évitement pour la navigation au clavier */
+.lien-evitement {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--sombre);
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  z-index: 200;
+}
+.lien-evitement:focus {
+  left: 0.5rem;
+  top: 0.5rem;
+}
+
+/* --------------------------------------------------------------------------
+   2. En-tête et navigation (présents sur toutes les pages)
+   -------------------------------------------------------------------------- */
+
+.entete {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(250, 248, 244, 0.97);
+  border-bottom: 1px solid var(--filet);
+  backdrop-filter: saturate(160%) blur(6px);
+}
+
+.entete__interieur {
+  /* La largeur inclut les marges intérieures, afin que le titre et le menu
+     s'alignent exactement sur les textes des sections. */
+  max-width: calc(var(--largeur-large) + 3rem);
+  margin: 0 auto;
+  padding: 0.85rem 1.5rem;
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.entete__marque {
+  font-family: var(--serif);
+  font-size: 1.02rem;
+  line-height: 1.25;
+  text-decoration: none;
+  color: var(--encre);
+  flex: 1 1 auto;
+}
+.entete__marque strong { font-weight: 600; display: block; }
+.entete__marque span {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--encre-legere);
+  margin-top: 0.2rem;
+}
+
+.entete__bouton {
+  display: none;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: none;
+  border: 1px solid var(--filet);
+  border-radius: 2px;
+  padding: 0.5rem 0.8rem;
+  color: var(--encre);
+  cursor: pointer;
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem 0.85rem;
+}
+
+.navigation a {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--encre-douce);
+  padding: 0.35rem 0;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+}
+.navigation a:hover { color: var(--accent); }
+.navigation a[aria-current="page"] {
+  color: var(--encre);
+  border-bottom-color: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .entete__bouton { display: block; }
+  .navigation {
+    flex-basis: 100%;
+    display: none;
+  }
+  .navigation.est-ouverte { display: block; }
+  .navigation ul {
+    flex-direction: column;
+    gap: 0;
+    padding-top: 0.5rem;
+  }
+  .navigation li { border-top: 1px solid var(--filet); }
+  .navigation a { padding: 0.7rem 0; width: 100%; }
+}
+
+/* --------------------------------------------------------------------------
+   3. Bandeau d'ouverture de page
+   -------------------------------------------------------------------------- */
+
+.bandeau {
+  background: var(--papier-fonce);
+  border-bottom: 1px solid var(--filet);
+}
+
+.bandeau--illustre {
+  background-color: var(--sombre);
+  background-size: cover;
+  background-position: center;
+  color: #f6f2ea;
+}
+.bandeau--illustre .bandeau__sur-titre { color: #e6cfc6; }
+.bandeau--illustre .bandeau__chapo,
+.bandeau--illustre .bandeau__credit { color: #ddd6cb; }
+
+.bandeau__interieur {
+  max-width: calc(var(--largeur-large) + 3rem);
+  margin: 0 auto;
+  padding: 4.5rem 1.5rem 3.5rem;
+}
+
+.bandeau__sur-titre {
+  font-family: var(--sans);
+  font-size: 0.76rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 1.1rem;
+}
+
+.bandeau h1 {
+  font-size: clamp(2rem, 5.2vw, 3.1rem);
+  line-height: 1.12;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  margin: 0;
+  max-width: 22ch;
+}
+
+.bandeau__sous-titre {
+  font-size: clamp(1.1rem, 2.6vw, 1.45rem);
+  font-style: italic;
+  font-weight: 400;
+  margin: 0.7rem 0 0;
+  max-width: 32ch;
+}
+
+.bandeau__chapo {
+  margin: 1.7rem 0 0;
+  max-width: 46ch;
+  font-size: 1.08rem;
+  color: var(--encre-douce);
+}
+
+.bandeau__credit {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  color: var(--encre-legere);
+  margin: 2rem 0 0;
+}
+
+/* --------------------------------------------------------------------------
+   4. Corps de page : sections, textes
+   -------------------------------------------------------------------------- */
+
+.page { padding: 0 1.5rem; }
+
+.section {
+  max-width: var(--largeur-large);
+  margin: 0 auto;
+  padding: 3.4rem 0;
+  border-bottom: 1px solid var(--filet);
+  /* Décalage pour que le menu fixe ne recouvre pas un titre atteint par un lien */
+  scroll-margin-top: 7rem;
+}
+.section:last-child { border-bottom: none; }
+
+.section > * { max-width: var(--largeur-texte); }
+
+.section h2 {
+  font-size: clamp(1.45rem, 3.4vw, 1.95rem);
+  font-weight: 400;
+  line-height: 1.22;
+  margin: 0 0 1.5rem;
+  position: relative;
+  padding-top: 1.1rem;
+}
+.section h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3rem;
+  height: 2px;
+  background: var(--accent);
+}
+
+.section p { margin: 0 0 1.15rem; }
+.section p:last-child { margin-bottom: 0; }
+
+.chapo {
+  font-size: 1.1rem;
+  color: var(--encre-douce);
+  font-style: italic;
+}
+
+.liste-puces {
+  margin: 0 0 1.3rem;
+  padding-left: 1.15rem;
+}
+.liste-puces li { margin-bottom: 0.65rem; }
+.liste-puces li::marker { color: var(--accent); }
+
+/* Citation mise en valeur */
+.citation {
+  margin: 2rem 0;
+  padding: 0 0 0 1.5rem;
+  border-left: 3px solid var(--accent);
+  font-size: 1.02rem;
+  color: var(--encre-douce);
+}
+.citation p { font-style: italic; }
+.citation cite {
+  display: block;
+  font-family: var(--sans);
+  font-style: normal;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--encre-legere);
+  margin-top: 0.8rem;
+}
+
+/* Encadré */
+.encadre {
+  margin: 2rem 0;
+  padding: 1.5rem 1.75rem;
+  background: var(--papier-fonce);
+  border: 1px solid var(--filet);
+}
+.encadre h3 {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 0.9rem;
+}
+.encadre ul { margin: 0; padding-left: 1.1rem; }
+.encadre li { margin-bottom: 0.55rem; }
+.encadre li:last-child { margin-bottom: 0; }
+.encadre p:last-child { margin-bottom: 0; }
+
+/* Lien vers une source en ligne */
+.source-en-ligne {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  margin: 1.5rem 0 0;
+}
+.source-en-ligne::before {
+  content: "↗";
+  color: var(--accent);
+  margin-right: 0.45rem;
+}
+
+/* --------------------------------------------------------------------------
+   5. Fiche d'identification de l'œuvre
+   -------------------------------------------------------------------------- */
+
+.fiche {
+  max-width: var(--largeur-texte);
+  margin: 0;
+  padding: 1.6rem 0 0;
+  border-top: 1px solid var(--filet);
+}
+.fiche__ligne {
+  display: grid;
+  grid-template-columns: 11rem 1fr;
+  gap: 0.4rem 1.5rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid var(--filet);
+}
+.fiche dt {
+  font-family: var(--sans);
+  font-size: 0.73rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--encre-legere);
+  padding-top: 0.15rem;
+}
+.fiche dd { margin: 0; }
+
+@media (max-width: 600px) {
+  .fiche__ligne { grid-template-columns: 1fr; gap: 0.15rem; }
+}
+
+/* --------------------------------------------------------------------------
+   6. Chronologie
+   -------------------------------------------------------------------------- */
+
+.chronologie {
+  list-style: none;
+  margin: 2rem 0 0;
+  padding: 0;
+  border-left: 1px solid var(--filet);
+}
+.chronologie li {
+  position: relative;
+  padding: 0 0 2rem 1.9rem;
+}
+.chronologie li:last-child { padding-bottom: 0; }
+.chronologie li::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 0.6rem;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.chronologie__date {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.77rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.4rem;
+}
+
+/* --------------------------------------------------------------------------
+   7. Visuels : figures, légendes, crédits, agrandissement
+   -------------------------------------------------------------------------- */
+
+.visuels {
+  max-width: var(--largeur-large);
+  margin: 2.5rem 0 0;
+  display: grid;
+  gap: 2.5rem;
+}
+.visuels--paire { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+@media (max-width: 720px) {
+  .visuels--paire { grid-template-columns: 1fr; }
+}
+
+.visuel { margin: 0; }
+
+.visuel__declencheur {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 1px solid var(--filet);
+  background: var(--surface);
+  cursor: zoom-in;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.visuel__declencheur:hover {
+  border-color: var(--accent);
+  box-shadow: 0 6px 22px rgba(30, 25, 20, 0.09);
+}
+
+.visuel__image { width: 100%; }
+
+/* Emplacement affiché tant que l'image n'a pas été déposée dans /images */
+.visuel__attente {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 13rem;
+  padding: 2rem 1.5rem;
+  background: repeating-linear-gradient(
+    45deg, var(--papier-fonce), var(--papier-fonce) 12px,
+    #e9e3d8 12px, #e9e3d8 24px);
+  border: 1px dashed var(--filet);
+  color: var(--encre-legere);
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  text-align: center;
+}
+.visuel__attente strong {
+  font-weight: 600;
+  color: var(--encre-douce);
+  word-break: break-all;
+}
+
+.visuel figcaption { padding-top: 0.85rem; }
+
+.visuel__legende {
+  display: block;
+  font-size: 0.94rem;
+  color: var(--encre-douce);
+  line-height: 1.5;
+}
+
+.visuel__credit {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.73rem;
+  letter-spacing: 0.05em;
+  color: var(--encre-legere);
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--filet);
+}
+.visuel__credit::before {
+  content: "Source : ";
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--accent);
+}
+
+.visuel__traduction {
+  margin-top: 0.9rem;
+  padding: 0.9rem 1.1rem;
+  background: var(--papier-fonce);
+  border-left: 2px solid var(--filet);
+  font-size: 0.88rem;
+  color: var(--encre-douce);
+}
+
+/* Fenêtre d'agrandissement */
+.loupe {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: flex;
+  flex-direction: column;
+  background: rgba(18, 16, 14, 0.975);
+  padding: 1rem;
+}
+.loupe[hidden] { display: none; }
+
+.loupe__barre {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  flex: 0 0 auto;
+}
+.loupe__bouton {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #f4efe6;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.28);
+  border-radius: 2px;
+  padding: 0.55rem 0.9rem;
+  cursor: pointer;
+}
+.loupe__bouton:hover { background: rgba(255,255,255,0.18); }
+
+.loupe__scene {
+  flex: 1 1 auto;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.loupe__image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  cursor: zoom-in;
+}
+.loupe__image.est-agrandie {
+  max-width: none;
+  max-height: none;
+  width: 200%;
+  cursor: zoom-out;
+}
+
+.loupe__legende {
+  flex: 0 0 auto;
+  max-width: var(--largeur-large);
+  margin: 0 auto;
+  padding-top: 0.8rem;
+  color: #ece6dc;
+  text-align: center;
+  font-size: 0.92rem;
+}
+.loupe__credit {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: #b8ada0;
+  margin-top: 0.4rem;
+}
+
+/* --------------------------------------------------------------------------
+   8. Vignettes des cinq tableaux (page d'accueil)
+   -------------------------------------------------------------------------- */
+
+.vignettes {
+  max-width: var(--largeur-large);
+  list-style: none;
+  margin: 2.5rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 2rem 1.75rem;
+}
+
+.vignette a {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  background: var(--surface);
+  border: 1px solid var(--filet);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.vignette a:hover,
+.vignette a:focus-visible {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  box-shadow: 0 10px 28px rgba(30, 25, 20, 0.11);
+}
+
+.vignette__cadre {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--papier-fonce);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vignette__cadre img { width: 100%; height: 100%; object-fit: cover; }
+
+.vignette__attente {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--encre-legere);
+  text-align: center;
+  padding: 1rem;
+  background: repeating-linear-gradient(
+    45deg, var(--papier-fonce), var(--papier-fonce) 12px,
+    #e9e3d8 12px, #e9e3d8 24px);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vignette__texte { padding: 1.1rem 1.25rem 1.35rem; }
+.vignette__artiste {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 0.4rem;
+}
+.vignette__titre {
+  font-size: 1.08rem;
+  font-style: italic;
+  display: block;
+  line-height: 1.35;
+}
+.vignette__mention {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  color: var(--encre-legere);
+  display: block;
+  margin-top: 0.6rem;
+}
+
+/* --------------------------------------------------------------------------
+   9. Liens de parcours (vers d'autres pages)
+   -------------------------------------------------------------------------- */
+
+.liens-parcours {
+  max-width: var(--largeur-large);
+  list-style: none;
+  margin: 1.8rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1.25rem;
+}
+.liens-parcours a {
+  display: block;
+  height: 100%;
+  padding: 1.25rem 1.4rem;
+  background: var(--surface);
+  border: 1px solid var(--filet);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.liens-parcours a:hover,
+.liens-parcours a:focus-visible {
+  border-color: var(--accent);
+  box-shadow: 0 6px 20px rgba(30, 25, 20, 0.08);
+}
+.liens-parcours strong {
+  display: block;
+  font-weight: 400;
+  font-size: 1.05rem;
+  color: var(--accent);
+  margin-bottom: 0.4rem;
+}
+.liens-parcours span {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  color: var(--encre-douce);
+  line-height: 1.5;
+}
+
+/* --------------------------------------------------------------------------
+   10. Tableaux de données
+   -------------------------------------------------------------------------- */
+
+.tableau-donnees {
+  max-width: var(--largeur-large);
+  overflow-x: auto;
+  margin: 2rem 0 0;
+  border: 1px solid var(--filet);
+}
+.tableau-donnees table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+  font-size: 0.92rem;
+}
+.tableau-donnees th,
+.tableau-donnees td {
+  text-align: left;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--filet);
+  vertical-align: top;
+}
+.tableau-donnees th {
+  font-family: var(--sans);
+  font-size: 0.73rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--encre-legere);
+  background: var(--papier-fonce);
+}
+.tableau-donnees tr:last-child td { border-bottom: none; }
+
+/* --------------------------------------------------------------------------
+   11. Navigation entre les tableaux (bas des sous-pages)
+   -------------------------------------------------------------------------- */
+
+.autres-tableaux {
+  background: var(--papier-fonce);
+  border-top: 1px solid var(--filet);
+  padding: 3rem 1.5rem;
+}
+.autres-tableaux__interieur { max-width: var(--largeur-large); margin: 0 auto; }
+.autres-tableaux h2 {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--encre-legere);
+  margin: 0 0 1.5rem;
+}
+.autres-tableaux ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1rem;
+}
+.autres-tableaux a {
+  display: block;
+  padding: 1rem 1.1rem;
+  background: var(--surface);
+  border: 1px solid var(--filet);
+  text-decoration: none;
+  color: inherit;
+}
+.autres-tableaux a:hover { border-color: var(--accent); }
+.autres-tableaux .vignette__artiste { margin-bottom: 0.3rem; }
+.autres-tableaux .vignette__titre { font-size: 0.95rem; }
+
+/* --------------------------------------------------------------------------
+   12. Pied de page
+   -------------------------------------------------------------------------- */
+
+.pied {
+  background: var(--sombre);
+  color: #d9d2c7;
+  padding: 3.5rem 1.5rem 2.5rem;
+}
+.pied__interieur {
+  max-width: var(--largeur-large);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 2.5rem;
+}
+@media (max-width: 760px) {
+  .pied__interieur { grid-template-columns: 1fr; }
+}
+.pied h2 {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: #e0b5a8;
+  margin: 0 0 1rem;
+}
+.pied p { margin: 0 0 0.9rem; font-size: 0.95rem; }
+.pied ul { list-style: none; margin: 0; padding: 0; }
+.pied li { margin-bottom: 0.55rem; }
+.pied a { color: #f0e9de; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.25); }
+.pied a:hover { color: #fff; border-bottom-color: #fff; }
+.pied__mention {
+  max-width: var(--largeur-large);
+  margin: 2.5rem auto 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255,255,255,0.16);
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  color: #a49a8d;
+}
+
+/* --------------------------------------------------------------------------
+   13. Messages d'aide (affichés seulement en cas de problème)
+   -------------------------------------------------------------------------- */
+
+.message-aide {
+  max-width: var(--largeur-texte);
+  margin: 3rem auto;
+  padding: 1.5rem 1.75rem;
+  border: 1px solid var(--accent);
+  background: #fff;
+}
+.message-aide h2 { margin-top: 0; font-size: 1.2rem; }
+.message-aide code {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: 0.88rem;
+  background: var(--papier-fonce);
+  padding: 0.15rem 0.35rem;
+}
+
+/* --------------------------------------------------------------------------
+   14. Impression
+   -------------------------------------------------------------------------- */
+
+@media print {
+  .entete, .loupe, .autres-tableaux { display: none !important; }
+  body { background: #fff; }
+  .section { border-bottom: none; page-break-inside: avoid; }
+}

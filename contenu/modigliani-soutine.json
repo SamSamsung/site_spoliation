@@ -1,0 +1,110 @@
+// ============================================================================
+//  FICHIER : modigliani-soutine.json
+//  RÔLE    : tout le texte et tous les visuels de la page consacrée au
+//            tableau « La porteuse de pain ».
+// ============================================================================
+{
+  "banniere": {
+    "sur_titre": "Tableau non localisé — ERR Meyer 9",
+    "titre": "Amedeo Modigliani ou Chaïm Soutine",
+    "sous_titre": "« La porteuse de pain »",
+    "chapo": "Attribué à Amedeo Modigliani dans l'inventaire de Raoul Meyer, ce tableau est attribué à Chaïm Soutine par les annotations allemandes portées au dos de la photographie et par l'historien Marc Masurovsky. Inventorié Meyer 9, il porte lui aussi la mention « retourné à la M-Aktion pour vente ».",
+    "image": "banniere-modigliani-soutine.jpg",
+    "credit_image": "Archives NARA, via ERR Project"
+  },
+
+  "fiche": [
+    { "label": "Artiste",        "valeur": "Amedeo Modigliani (inventaire Raoul Meyer) — Chaïm Soutine (annotations allemandes)" },
+    { "label": "Titre",          "valeur": "« La porteuse de pain »" },
+    { "label": "Technique",      "valeur": "Huile sur toile, non signée" },
+    { "label": "Dimensions",     "valeur": "51 × 73 cm (archives de l'ERR) — 50 × 75 cm (Répertoire des biens spoliés)" },
+    { "label": "Référence ERR",  "valeur": "Meyer 9" },
+    { "label": "Référence RBS",  "valeur": "N° 4152" },
+    { "label": "Dossier OBIP",   "valeur": "32.058" },
+    { "label": "Statut",         "valeur": "Non localisé" }
+  ],
+
+  "sections": [
+
+    {
+      "ancre": "identification",
+      "titre": "Identification et spoliation",
+      "liste": [
+        "Huile sur toile non signée.",
+        "Dimensions : 51 × 73 cm (dans les archives de l'ERR) et 50 × 75 cm (dans le RBS).",
+        "Spoliation le 22 février 1941 par le D.S.K. dans les coffres de l'agence du CCF de Mont-de-Marsan avec le reste de la collection de Raoul Meyer, puis transfert de la collection vers le Jeu de Paume.",
+        "Inventoriée par l'ERR lors de son arrivée au musée du Jeu de Paume sous la référence Meyer 9."
+      ],
+      "visuels": [
+        {
+          "fichier": "modigliani-soutine-fiche-err-nara.jpg",
+          "legende": "Fiche d'inventaire de l'ERR relative au tableau « La porteuse de pain ».",
+          "credit": "Archives NARA (National Archives and Records Administration) 4791 4798, via ERR Project"
+        }
+      ]
+    },
+
+    {
+      "ancre": "m-aktion",
+      "titre": "Réorientation vers l'Action Meubles",
+      "paragraphes": [
+        "Comme pour le tableau d'Albert Marquet, l'indication « zurück an M-Aktion zum Verkauf » suggère que le tableau, n'intéressant pas les musées du Reich, fut réorienté vers l'Action Meubles afin d'être monnayé (« zum Verkauf »). La mention « P.B.C. » indique que le tableau a fait l'objet d'une manutention par la maison Pusey Beaumont Crassier en juin 1943."
+      ],
+      "visuels": [
+        {
+          "fichier": "modigliani-soutine-note-err-209sup-506.jpg",
+          "legende": "Note administrative relative au tableau « La porteuse de pain ».",
+          "credit": "Archives MEAE 209SUP/506",
+          "traduction": "Traduction libre de la mention dactylographiée : « Le tableau est parvenu à l'ERR par la même voie que celle indiquée ci-dessus sous la référence “Meyer n° 9”. Dans l'inventaire de l'ERR, il a été pourvu de l'annotation : “Retourné à la M-Aktion pour vente”. Son sort est inconnu. » — Traduction libre de la mention manuscrite : « Emballage P.B.C. le 21 juin 43. Groupe 20 – 2-0. »"
+        }
+      ]
+    },
+
+    {
+      "ancre": "attribution",
+      "titre": "Modigliani ou Soutine ? La question de l'attribution",
+      "paragraphes": [
+        "Bien que l'inventaire de Raoul Meyer attribue ce tableau à Amedeo Modigliani, il est attribué à Chaïm Soutine, notamment par l'historien Marc Masurovsky. On notera à ce titre que l'annotation manuscrite apportée par les autorités allemandes indique, au dos de la photographie, le nom de Soutine et non celui de Modigliani."
+      ],
+      "source_en_ligne": {
+        "libelle": "Fiche du tableau sur le site ERR Project",
+        "url": "https://www.errproject.org/jeudepaume/card_view.php?CardId=4791"
+      },
+      "visuels": [
+        {
+          "fichier": "modigliani-soutine-photographie-recto.jpg",
+          "legende": "Recto de la photographie du tableau.",
+          "credit": "Archives Nationales d'Allemagne B 323 854 (collection Fabiani)"
+        },
+        {
+          "fichier": "modigliani-soutine-photographie-verso.jpg",
+          "legende": "Annotations portées au verso de la photographie : le nom de Soutine y figure.",
+          "credit": "Archives Nationales d'Allemagne B 323 854 (collection Fabiani)"
+        }
+      ]
+    },
+
+    {
+      "ancre": "echange-fabiani",
+      "titre": "Un échange envisagé avec Martin Fabiani",
+      "paragraphes": [
+        "Comme l'atteste la mention « Geplanter Tausch Fabiani » inscrite en allemand sur la fiche d'archive administrative, l'ERR avait identifié le tableau pour un échange avec le marchand d'art Martin Fabiani. On ignore si l'échange a eu lieu ou non."
+      ]
+    },
+
+    {
+      "ancre": "etat-des-recherches",
+      "titre": "État des recherches",
+      "paragraphes": [
+        "Le sort du tableau demeure inconnu. Les autorités ouest-allemandes ont prononcé la clôture de la procédure de restitution le 16 mars 1961, faute d'indices quelconques sur sa localisation."
+      ],
+      "liens": [
+        {
+          "libelle": "Lire la décision du 16 mars 1961",
+          "lien": "demarches/autorites-allemandes.html",
+          "description": "Le raisonnement des autorités ouest-allemandes, tableau par tableau."
+        }
+      ]
+    }
+  ]
+}

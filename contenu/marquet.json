@@ -1,0 +1,127 @@
+// ============================================================================
+//  FICHIER : marquet.json
+//  RÔLE    : tout le texte et tous les visuels de la page consacrée au
+//            tableau d'Albert Marquet.
+// ============================================================================
+{
+  "banniere": {
+    "sur_titre": "Tableau non localisé — ERR Meyer 6",
+    "titre": "Albert Marquet",
+    "sous_titre": "« Les bords de la Seine à Paris sous la neige » ou « Pont Saint-Michel »",
+    "chapo": "Inventorié par l'ERR sous la référence Meyer 6, ce tableau porte la mention « retourné à la M-Aktion pour vente » et fut réservé pour un échange planifié avec le marchand Martin Fabiani. Son sort demeure inconnu.",
+    "image": "banniere-marquet.jpg",
+    "credit_image": "Archives Nationales d'Allemagne B 323 914"
+  },
+
+  "fiche": [
+    { "label": "Artiste",       "valeur": "Albert Marquet" },
+    { "label": "Titre",         "valeur": "« Les bords de la Seine à Paris sous la neige »" },
+    { "label": "Autre titre",   "valeur": "« Pont Saint-Michel » (dans les dossiers de l'ERR)" },
+    { "label": "Technique",     "valeur": "Huile sur toile, signée en bas à droite" },
+    { "label": "Dimensions",    "valeur": "62 × 92 cm (Archives Nationales d'Allemagne) — 72 × 75 cm (Répertoire des biens spoliés)" },
+    { "label": "Référence ERR", "valeur": "Meyer 6" },
+    { "label": "Référence RBS", "valeur": "N° 6345" },
+    { "label": "Dossier OBIP",  "valeur": "32.058" },
+    { "label": "Statut",        "valeur": "Non localisé" }
+  ],
+
+  "sections": [
+
+    {
+      "ancre": "identification",
+      "titre": "Identification et spoliation",
+      "liste": [
+        "Huile sur toile signée en bas à droite.",
+        "Dimensions : 62 × 92 cm (Archives Nationales d'Allemagne), 72 × 75 cm (Répertoire des biens spoliés).",
+        "Spoliation le 22 février 1941 par le D.S.K. dans les coffres de l'agence du CCF de Mont-de-Marsan avec le reste de la collection de Raoul Meyer, puis transfert de la collection vers le Jeu de Paume.",
+        "Tableau inventorié par l'ERR à son arrivée au Jeu de Paume sous la référence Meyer 6.",
+        "Le tableau est appelé « Pont Saint-Michel » dans les dossiers de l'ERR ; il est appelé « Les bords de la Seine à Paris sous la neige » dans l'inventaire établi par Raoul Meyer et dans le Répertoire des biens spoliés.",
+        "Le tableau est transféré au Jeu de Paume le 11 février 1941."
+      ],
+      "visuels": [
+        {
+          "fichier": "marquet-photographie-err-recto.jpg",
+          "legende": "Recto de la photographie du tableau.",
+          "credit": "Archives Nationales d'Allemagne B 323 914"
+        },
+        {
+          "fichier": "marquet-photographie-err-verso.jpg",
+          "legende": "Verso de la photographie du tableau.",
+          "credit": "Archives Nationales d'Allemagne B 323 914"
+        }
+      ]
+    },
+
+    {
+      "ancre": "m-aktion",
+      "titre": "« Retourné à la M-Aktion pour vente »",
+      "paragraphes": [
+        "L'indication « zurück an M-Aktion zum Verkauf » suggère que le tableau fut réorienté vers un circuit de vente."
+      ],
+      "visuels": [
+        {
+          "fichier": "marquet-note-err-209sup-506.jpg",
+          "legende": "Note administrative relative au tableau d'Albert Marquet.",
+          "credit": "Archives MEAE 209SUP/506",
+          "traduction": "Traduction libre de la mention dactylographiée : « Le tableau fut également saisi le 11.2.1941 par le Devisenschutzkommando au Crédit Commercial de France et parvint à l'ERR sous la désignation “Meyer n° 6”. Dans l'inventaire de l'ERR, il fut accompagné de la mention : “Retourné à la M-Aktion pour vente”. Son sort demeure inconnu. » — Traduction libre de la mention manuscrite : « Emballage Action Peintures Modernes de juillet 1943. Groupe 1 – Imp. 27. »"
+        }
+      ]
+    },
+
+    {
+      "ancre": "echange-fabiani",
+      "titre": "L'échange planifié avec Martin Fabiani",
+      "paragraphes": [
+        "La mention « Geplanter Tausch Fabiani » inscrite sur la fiche d'archive administrative de l'ERR — traduite par « Échange planifié avec Fabiani » — indique que ce tableau avait été identifié par l'ERR comme de l'art dégénéré et avait été réservé par les services allemands pour être échangé avec le marchand d'art français Martin Fabiani.",
+        "On sait qu'un échange devait intervenir entre Martin Fabiani et un marchand nommé Roger Dequoy d'une part, et l'ERR d'autre part, en janvier 1944. Le marchand d'art devait récupérer cinquante-deux tableaux modernes contre la fourniture de sept tableaux anciens. Les tableaux furent apparemment livrés à Fabiani et Dequoy ; cependant, le déséquilibre financier au profit du marchand français aurait attiré l'attention de Robert Scholtz, fondateur de la section « Beaux-Arts » de l'ERR. Ce dernier, semble-t-il, empêcha que l'échange ait lieu et les tableaux furent renvoyés au Jeu de Paume. Cet épisode est relaté dans ses carnets par Rose Valland. À notre connaissance, il n'existe pas de liste exhaustive des tableaux objet de l'échange projeté."
+      ],
+      "visuels": [
+        {
+          "fichier": "marquet-carton-fabiani-recto.jpg",
+          "legende": "Recto du carton d'inventaire avec la photographie du tableau.",
+          "credit": "Archives Nationales d'Allemagne B 323 854 (collection Fabiani)"
+        },
+        {
+          "fichier": "marquet-carton-fabiani-verso.jpg",
+          "legende": "Verso du carton d'inventaire où figurent les annotations manuscrites « Geplanter Tausch Fabiani Marquet » apportées par les archivistes.",
+          "credit": "Archives Nationales d'Allemagne B 323 854 (collection Fabiani)"
+        },
+        {
+          "fichier": "marquet-carnets-valland-209sup-406.jpg",
+          "legende": "Notes relatives à l'échange projeté avec Fabiani et Dequoy.",
+          "credit": "Archives MEAE 209SUP/406"
+        }
+      ]
+    },
+
+    {
+      "ancre": "emballage-pbc",
+      "titre": "L'emballage par la maison Pusey Beaumont Crassier",
+      "paragraphes": [
+        "La mention manuscrite relative à l'emballage renvoie aux registres de la maison Pusey Beaumont Crassier, prestataire parisien d'emballage et de transport d'œuvres d'art, intervenu dans les opérations logistiques du Jeu de Paume pendant l'occupation. Elle atteste la prise en charge matérielle du tableau d'Albert Marquet aux côtés de tableaux de la collection de Paul Rosenberg dans le cadre du traitement des tableaux modernes au Louvre / Jeu de Paume. Les tableaux objet de ces opérations d'emballage étaient en général destinés à être transportés vers l'Allemagne."
+      ],
+      "visuels": [
+        {
+          "fichier": "marquet-registres-pusey-beaumont-crassier.jpg",
+          "legende": "Extrait des registres de la maison Pusey Beaumont Crassier.",
+          "credit": "Archives MEAE 209SUP/107"
+        }
+      ]
+    },
+
+    {
+      "ancre": "etat-des-recherches",
+      "titre": "État des recherches",
+      "paragraphes": [
+        "On ignore ce qu'il est advenu du tableau d'Albert Marquet. Les dernières informations administratives recueillies sur ce tableau figurent dans la décision du 16 mars 1961 rendue par les autorités allemandes sur la demande d'indemnisation de Raoul Meyer."
+      ],
+      "liens": [
+        {
+          "libelle": "Lire la décision du 16 mars 1961",
+          "lien": "demarches/autorites-allemandes.html",
+          "description": "Le raisonnement des autorités ouest-allemandes, tableau par tableau."
+        }
+      ]
+    }
+  ]
+}

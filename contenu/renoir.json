@@ -1,0 +1,102 @@
+// ============================================================================
+//  FICHIER : renoir.json
+//  RÔLE    : tout le texte et tous les visuels de la page consacrée au
+//            tableau de Pierre-Auguste Renoir.
+// ============================================================================
+{
+  "banniere": {
+    "sur_titre": "Tableau non localisé — ERR Meyer 11",
+    "titre": "Pierre-Auguste Renoir",
+    "sous_titre": "« Le Cannet » ou « Paysage avec des jeunes femmes et un bébé »",
+    "chapo": "Acheté par M. et Mme Meyer à la vente de la collection Maurice Gangnat en 1925, ce tableau peint en 1901 est envoyé par l'ERR au château de Nikolsburg en novembre 1943. La forteresse fut gravement incendiée à la fin de la guerre ; le sort du tableau demeure inconnu.",
+    "image": "banniere-renoir.jpg",
+    "credit_image": "Catalogue de la vente du 24 juin 1925"
+  },
+
+  "fiche": [
+    { "label": "Artiste",         "valeur": "Pierre-Auguste Renoir" },
+    { "label": "Titre",           "valeur": "« Le Cannet »" },
+    { "label": "Autre titre",     "valeur": "« Paysage avec des jeunes femmes et un bébé »" },
+    { "label": "Date",            "valeur": "Œuvre peinte en 1901" },
+    { "label": "Technique",       "valeur": "Huile sur toile, signée en bas à gauche" },
+    { "label": "Dimensions",      "valeur": "56 × 70 cm (Répertoire des biens spoliés) — 53 × 64 cm (catalogue de la vente)" },
+    { "label": "Référence ERR",   "valeur": "Meyer 11" },
+    { "label": "Référence RBS",   "valeur": "N° 4808" },
+    { "label": "Dossier OBIP",    "valeur": "32.058" },
+    { "label": "Dernière trace",  "valeur": "Château de Nikolsburg (Mikulov), 15 novembre 1943" },
+    { "label": "Statut",          "valeur": "Non localisé" }
+  ],
+
+  "sections": [
+
+    {
+      "ancre": "acquisition",
+      "titre": "Acquisition à la vente Gangnat, 24 juin 1925",
+      "liste": [
+        "Huile sur toile signée en bas à gauche.",
+        "Dimensions : 56 × 70 cm (dans le RBS) et 53 × 64 cm (dans le catalogue de la vente).",
+        "Œuvre peinte en 1901.",
+        "Aussi référencée sous le titre « Paysage avec des jeunes femmes et un bébé ».",
+        "Le tableau est acheté par M. et Mme Meyer à la vente aux enchères des tableaux de la collection de Maurice Gangnat, le 24 juin 1925. Le tableau porte le numéro 117."
+      ],
+      "visuels": [
+        {
+          "fichier": "renoir-catalogue-vente-gangnat-1925.jpg",
+          "legende": "Notice n° 117 du catalogue de la vente de la collection Maurice Gangnat, 24 juin 1925.",
+          "credit": "Catalogue de la vente du 24 juin 1925"
+        }
+      ]
+    },
+
+    {
+      "ancre": "spoliation",
+      "titre": "Spoliation et inventaire de l'ERR",
+      "liste": [
+        "Spoliation le 22 février 1941 par le D.S.K. dans les coffres de l'agence du CCF de Mont-de-Marsan avec le reste de la collection de Raoul Meyer, puis transfert de la collection vers le Jeu de Paume.",
+        "L'ERR lui assigne la référence Meyer 11 à son arrivée au musée du Jeu de Paume."
+      ]
+    },
+
+    {
+      "ancre": "nikolsburg",
+      "titre": "13 novembre 1943 : le transport vers le château de Nikolsburg",
+      "paragraphes": [
+        "Le 13 novembre 1943, le tableau est envoyé par l'ERR au château de Nikolsburg (aujourd'hui Mikulov, en République tchèque) par le transport 07 510 176. À l'automne 1943 et jusqu'au printemps 1945, cette forteresse servait de dépôt de l'ERR. De nombreuses caisses ont été transférées du dépôt à Altaussee (Autriche), où les autorités du Reich avaient créé un réseau de galeries de mines de sel dans lesquelles elles ont stocké l'art pillé dans toute l'Europe. Cependant, toutes les caisses de Nikolsburg ne sont pas arrivées à Altaussee : un nombre inconnu est resté au château.",
+        "À la fin de la Seconde Guerre mondiale, le château de Nikolsburg, où étaient entreposés de nombreux objets spoliés passés par l'ERR, a été gravement incendié lors des combats et bombardements, sans que l'on sache précisément ce qui a été détruit. Si les autorités françaises, dont Rose Valland, ont conclu à la destruction du château, plusieurs centaines d'objets portant des numéros ERR furent néanmoins restitués par le gouvernement tchèque à la France deux ans plus tard. Faute d'inventaire complet des biens stockés à Nikolsburg, une incertitude demeure sur le sort exact des objets qui y avaient été entreposés et sur l'éventuelle présence de certains d'entre eux en République tchèque, en Slovaquie ou en Autriche."
+      ],
+      "source_en_ligne": {
+        "libelle": "« The fate of the Nikolsburg hoard », plunderedart.org",
+        "url": "https://plunderedart.org/2011/04/25/the-fate-of-the-nikolsburg-hoard/"
+      },
+      "visuels": [
+        {
+          "fichier": "renoir-convoi-nikolsburg-209sup-103-29.jpg",
+          "legende": "Mention du convoi de transfert vers le dépôt de Nikolsburg.",
+          "credit": "Archives du MEAE, 209 SUP/103/29",
+          "traduction": "Traduction libre : « Expédiés par le convoi n° 07 510 176 du 15 novembre 1943 à destination du dépôt de Nikolsburg. »"
+        },
+        {
+          "fichier": "renoir-fiche-b401259.jpg",
+          "legende": "Fiche administrative allemande relative aux biens de Mme Raoul Meyer.",
+          "credit": "Archives Nationales d'Allemagne B 401 259",
+          "traduction": "Traduction libre : « Le 11 février 1941, le D.S.K. confisqua les biens de Mme Raoul Meyer au Crédit Commercial de France et les transféra à l'ERR (Meyer 11). Le 15 novembre 1943, ils furent transférés de Paris au dépôt de l'ERR au château de Nikolsburg / CSR. On ignore où ils se trouvent actuellement. »"
+        }
+      ]
+    },
+
+    {
+      "ancre": "etat-des-recherches",
+      "titre": "État des recherches",
+      "paragraphes": [
+        "Dans sa note du 26 janvier 1961, la France indique retirer sa demande de restitution « pour autant que le tableau réclamé soit demeuré en dehors du territoire de la République Fédérale d'Allemagne après sa dernière localisation connue (château de Nikolsburg en Tchécoslovaquie) ». La décision du 23 mars 1961 ne se prononce donc pas sur ce tableau."
+      ],
+      "liens": [
+        {
+          "libelle": "Les réclamations auprès de l'État allemand",
+          "lien": "demarches/autorites-allemandes.html",
+          "description": "La loi BRüG, la décision de 1961 et son raisonnement."
+        }
+      ]
+    }
+  ]
+}
