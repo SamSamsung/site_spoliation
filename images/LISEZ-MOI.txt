@@ -1,24 +1,33 @@
 =============================================================================
-  DOSSIER « images » — LISTE DES VISUELS ATTENDUS PAR LE SITE
+  DOSSIER « images » — LES VISUELS DU SITE
 =============================================================================
 
-Chaque nom de fichier ci-dessous est déjà inscrit dans les fichiers de
-contenu, avec sa légende et son crédit. Il vous suffit de déposer dans ce
-dossier une image portant EXACTEMENT ce nom pour qu'elle apparaisse sur le
-site, à l'endroit prévu.
+Toutes les images du document Word ont été importées et sont déjà en place.
+Ce fichier récapitule, page par page, quel fichier correspond à quel visuel.
 
-Tant qu'un fichier est absent, le site affiche à sa place un rectangle en
-pointillés indiquant le nom attendu : rien n'est cassé, l'emplacement vous
-attend.
+POUR REMPLACER UNE IMAGE PAR UNE MEILLEURE VERSION
+  Déposez le nouveau fichier dans ce dossier en lui donnant EXACTEMENT le
+  même nom que l'ancien : le site l'affichera à la place, sans autre
+  manipulation.
 
-Vous n'êtes pas obligé(e) de fournir toutes ces images, et vous pouvez en
-ajouter d'autres : il suffit alors d'ajouter le bloc correspondant dans le
-fichier de contenu de la page (voir MODE-D-EMPLOI.md).
+POUR AJOUTER UN NOUVEAU VISUEL
+  Déposez le fichier ici, puis ajoutez son bloc (nom de fichier, légende,
+  crédit) dans le fichier de contenu de la page concernée.
+  Voir MODE-D-EMPLOI.md, chapitre 4.
 
-Formats conseillés : .jpg pour les photographies et les documents scannés,
-.png pour les captures d'écran. Largeur conseillée : 1600 à 2400 pixels
-pour les documents d'archives (afin qu'ils restent lisibles une fois
-agrandis), 1200 pixels pour les vignettes.
+POUR EN SUPPRIMER UN
+  Retirez son bloc du fichier de contenu. Le fichier image peut rester ici
+  sans dommage, ou être supprimé.
+
+SI UNE IMAGE MANQUE
+  Le site affiche à sa place un rectangle en pointillés portant le nom du
+  fichier attendu : rien n'est cassé, l'emplacement vous attend.
+
+QUALITÉ DES FICHIERS
+  Les images proviennent du document Word et en ont la définition
+  d'origine (de 350 à 1 800 pixels de large). Si vous disposez de scans de
+  meilleure qualité pour certains documents d'archives, remplacez-les :
+  ils gagneront en lisibilité une fois agrandis à l'écran.
 
 -----------------------------------------------------------------------------
   Vignettes de la page d'accueil (fichier contenu/site.json)
@@ -45,9 +54,6 @@ agrandis), 1200 pixels pour les vignettes.
   Page d'accueil (contenu/accueil.json)
 -----------------------------------------------------------------------------
 
-  banniere-accueil.jpg
-      Image du bandeau d'ouverture de la page
-
   1941-01-23-ordonnance-de-sequestre.jpg
       Ordonnance de mise sous séquestre notifiée à Yvonne Meyer, 23
       janvier 1941.
@@ -61,9 +67,6 @@ agrandis), 1200 pixels pour les vignettes.
 -----------------------------------------------------------------------------
   Page Pierre Bonnard (contenu/bonnard.json)
 -----------------------------------------------------------------------------
-
-  banniere-bonnard.jpg
-      Image du bandeau d'ouverture de la page
 
   bonnard-fiche-inventaire-err-recto.jpg
       Recto de la fiche d'inventaire comportant la photographie du tableau
@@ -90,9 +93,6 @@ agrandis), 1200 pixels pour les vignettes.
   Page Albert Marquet (contenu/marquet.json)
 -----------------------------------------------------------------------------
 
-  banniere-marquet.jpg
-      Image du bandeau d'ouverture de la page
-
   marquet-photographie-err-recto.jpg
       Recto de la photographie du tableau.
 
@@ -113,14 +113,17 @@ agrandis), 1200 pixels pour les vignettes.
       Notes relatives à l'échange projeté avec Fabiani et Dequoy.
 
   marquet-registres-pusey-beaumont-crassier.jpg
-      Extrait des registres de la maison Pusey Beaumont Crassier.
+      Extrait des registres de la maison Pusey Beaumont Crassier : sous le
+      n° 27, la mention « 14 peintures Rosenberg Paris » suivie de la
+      référence « Meyer 6 ».
+
+  marquet-registres-pusey-beaumont-crassier-entete.jpg
+      En-tête de la page du registre : « S. Louvre akt. Mod. Bilder vom
+      Juli 43 » — séquestre du Louvre, tableaux modernes, juillet 1943.
 
 -----------------------------------------------------------------------------
   Page Modigliani / Soutine (contenu/modigliani-soutine.json)
 -----------------------------------------------------------------------------
-
-  banniere-modigliani-soutine.jpg
-      Image du bandeau d'ouverture de la page
 
   modigliani-soutine-fiche-err-nara.jpg
       Fiche d'inventaire de l'ERR relative au tableau « La porteuse de
@@ -140,12 +143,12 @@ agrandis), 1200 pixels pour les vignettes.
   Page Pierre-Auguste Renoir (contenu/renoir.json)
 -----------------------------------------------------------------------------
 
-  banniere-renoir.jpg
-      Image du bandeau d'ouverture de la page
+  renoir-catalogue-vente-gangnat-1925-couverture.jpg
+      Couverture du catalogue : « 160 tableaux par Renoir » composant la
+      collection Maurice Gangnat, Hôtel Drouot, 24 et 25 juin 1925.
 
-  renoir-catalogue-vente-gangnat-1925.jpg
-      Notice n° 117 du catalogue de la vente de la collection Maurice
-      Gangnat, 24 juin 1925.
+  renoir-catalogue-vente-gangnat-1925-planche.jpg
+      La planche du catalogue reproduisant « Le Cannet », 1901.
 
   renoir-convoi-nikolsburg-209sup-103-29.jpg
       Mention du convoi de transfert vers le dépôt de Nikolsburg.
@@ -157,9 +160,6 @@ agrandis), 1200 pixels pour les vignettes.
 -----------------------------------------------------------------------------
   Page Camille Pissarro (contenu/pissarro.json)
 -----------------------------------------------------------------------------
-
-  banniere-pissarro.jpg
-      Image du bandeau d'ouverture de la page
 
   pissarro-intitules-dossiers-francais-209sup-219.jpg
       Les différents intitulés sous lesquels le tableau est référencé dans
@@ -174,20 +174,37 @@ agrandis), 1200 pixels pour les vignettes.
       Notice n° 93 du catalogue de la vente de la collection de Gaston
       Lévy, 17 novembre 1932.
 
-  pissarro-catalogue-raisonne-venturi-1939.jpg
-      Notice du tableau dans le catalogue raisonné de Lionello Venturi et
-      Ludovic Rodo Pissarro, 1939.
+  pissarro-catalogue-raisonne-venturi-1939-titre.jpg
+      Page de titre du catalogue raisonné « Camille Pissarro, son art —
+      son œuvre », par Ludovic Rodo Pissarro et Lionello Venturi, Paul
+      Rosenberg éditeur, 1939.
+
+  pissarro-catalogue-raisonne-venturi-1939-notice.jpg
+      Notice n° 715 du catalogue raisonné, page 181 : « 1887. La cavée à
+      Eragny, plein midi. Signé en bas à droite, daté 1887. H : 73 ; L :
+      92. » La provenance mentionne la vente de la collection Gaston Lévy
+      du 17 novembre 1932, n° 93.
+
+  pissarro-catalogue-raisonne-venturi-1939-planche.jpg
+      La planche n° 715 du catalogue raisonné reproduisant le tableau.
+
+  pissarro-references-unb-323-297.jpg
+      Relevé des références UNB attribuées aux tableaux de Camille
+      Pissarro : la référence UNB 350 y figure.
 
   pissarro-fiche-unb350-323-297.jpg
-      Fiche d'inventaire de l'ERR sous la référence UNB 350.
+      Fiche d'inventaire de l'ERR sous la référence UNB 350 : « Camille
+      Pissarro 1830-1903, route de campagne avec paysans », huile sur
+      toile, format horizontal, signée en bas à droite et datée 1887.
 
   pissarro-lien-unb350-meyer3-323-297.jpg
       Document faisant le lien entre la référence UNB 350 et la référence
       Meyer 3.
 
-  pissarro-inventaire-valland-jeu-de-paume.jpg
-      Inventaire réalisé par Rose Valland : le tableau est recensé parmi
-      les œuvres entreposées au musée du Jeu de Paume.
+  pissarro-releve-oeuvres-madame-meyer-209sup-406.jpg
+      Relevé manuscrit des œuvres de Madame Meyer entreposées au Jeu de
+      Paume : le Pissarro de 1887, « femmes allant au travail », huile sur
+      toile 74 × 92, y figure au n° 3.
 
   pissarro-contrat-echange-rochlitz-323-72.jpg
       Document relatif à l'échange n° 14 entre l'ERR et la galerie Gustav
@@ -198,8 +215,9 @@ agrandis), 1200 pixels pour les vignettes.
       le soupçon d'une vente en France ou en Suisse par Gustav Rochlitz.
 
   pissarro-notes-valland-lohse.jpg
-      Notes de Rose Valland relatives au retrait du tableau du Jeu de
-      Paume par Bruno Lohse.
+      « Tableaux emportés du Musée du Jeu de Paume le 3.3.1942 par le Dr
+      Lohse » : « Pissarro : “A la Campagne”, signé et daté 1887, coll.
+      Meyer, 66 × 80 ».
 
   pissarro-documentation-francaise-echange-14.jpg
       L'échange n° 14 du 25 février 1942 est attesté par de nombreux
@@ -208,8 +226,15 @@ agrandis), 1200 pixels pour les vignettes.
       restitution.
 
   pissarro-inventaire-jeu-de-paume-10-03-1942.jpg
-      Inventaire des tableaux entreposés au Jeu de Paume à la date du 10
-      mars 1942 : le tableau y figure encore.
+      « Copie d'un inventaire allemand — Œuvres d'art moderne réunies au
+      Jeu de Paume à la date du 10 mars 1942. Ces œuvres furent choisies
+      comme étant les meilleures parmi les peintures modernes prises par
+      le Service Rosenberg. »
+
+  pissarro-inventaire-jeu-de-paume-10-03-1942-coll-meyer.jpg
+      Le relevé de la collection de Madame Meyer dans cet inventaire : le
+      Pissarro y figure au n° 3, « Femmes allant au travail », huile sur
+      toile 74 × 92.
 
   pissarro-hypothese-suisse-valland.jpg
       Dans son enquête, Rose Valland fait l'hypothèse que le tableau a pu
@@ -237,9 +262,6 @@ agrandis), 1200 pixels pour les vignettes.
 -----------------------------------------------------------------------------
   Page Autorités françaises (contenu/demarches-francaises.json)
 -----------------------------------------------------------------------------
-
-  banniere-demarches-francaises.jpg
-      Image du bandeau d'ouverture de la page
 
   obip-declaration-raoul-meyer-1945-09-01.jpg
       Annexe de la déclaration de Raoul Meyer concernant certaines
@@ -287,24 +309,6 @@ agrandis), 1200 pixels pour les vignettes.
       la coïncidence entre le visuel du tableau et sa propriété par Raoul
       Meyer.
 
------------------------------------------------------------------------------
-  Page Autorités allemandes (contenu/demarches-allemandes.json)
------------------------------------------------------------------------------
-
-  banniere-demarches-allemandes.jpg
-      Image du bandeau d'ouverture de la page
-
-  decision-16-mars-1961-209sup-506.jpg
-      Décision rendue le 16 mars 1961 par les autorités ouest-allemandes
-      sur la demande n° 568 du 13 décembre 1955.
-
------------------------------------------------------------------------------
-  Page Dimensions et titres (contenu/ecarts-dimensions-titres.json)
------------------------------------------------------------------------------
-
-  banniere-ecarts.jpg
-      Image du bandeau d'ouverture de la page
-
 =============================================================================
-  Total : 66 emplacements de visuels prévus.
+  Total : 62 visuels en place.
 =============================================================================

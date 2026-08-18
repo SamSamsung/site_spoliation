@@ -9,8 +9,10 @@
     "titre": "Amedeo Modigliani ou Chaïm Soutine",
     "sous_titre": "« La porteuse de pain »",
     "chapo": "Attribué à Amedeo Modigliani dans l'inventaire de Raoul Meyer, ce tableau est attribué à Chaïm Soutine par les annotations allemandes portées au dos de la photographie et par l'historien Marc Masurovsky. Inventorié Meyer 9, il porte lui aussi la mention « retourné à la M-Aktion pour vente ».",
-    "image": "banniere-modigliani-soutine.jpg",
-    "credit_image": "Archives NARA, via ERR Project"
+    // Bandeau sans photographie : le titre s'affiche alors sur fond clair.
+    // Pour mettre une image de fond, déposez un fichier dans le dossier
+    // « images » puis écrivez son nom entre les guillemets ci-dessous.
+    "image": ""
   },
 
   "fiche": [

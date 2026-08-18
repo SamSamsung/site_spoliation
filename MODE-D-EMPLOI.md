@@ -247,11 +247,19 @@ pas la virgule sur la ligne précédente :
 }
 ```
 
-### Où voir la liste des images déjà prévues ?
+### Où voir la liste des images du site ?
 
-Le fichier **`images/LISEZ-MOI.txt`** récapitule les **66 emplacements de visuels** déjà
-déclarés dans le site, avec pour chacun le nom de fichier attendu et sa légende.
-Tant qu'un fichier est absent, le site affiche à sa place un rectangle en pointillés
+Le fichier **`images/LISEZ-MOI.txt`** récapitule, page par page, les **62 visuels**
+actuellement en place, avec pour chacun le nom de son fichier et sa légende.
+
+Les 57 visuels du document Word ont été importés et sont déjà positionnés au bon
+endroit ; s'y ajoutent les 5 vignettes des tableaux de la page d'accueil.
+
+**Pour remplacer une image par une meilleure version** (un scan plus fin, par exemple) :
+déposez le nouveau fichier dans le dossier `images` en lui donnant **exactement le même
+nom** que l'ancien. Le site l'affichera à sa place, sans aucune autre manipulation.
+
+Si un fichier venait à manquer, le site afficherait à sa place un rectangle en pointillés
 indiquant le nom attendu : **rien n'est cassé**, l'emplacement vous attend.
 
 ---
@@ -453,8 +461,11 @@ bandeau d'ouverture de la page :
 }
 ```
 
-Si vous laissez `"image": ""` (deux guillemets vides), le bandeau s'affiche sur fond
-clair, sans photographie : c'est tout à fait acceptable esthétiquement.
+Aujourd'hui, toutes les pages ont `"image": ""` (deux guillemets vides) : le bandeau
+s'affiche sur fond clair, sans photographie de fond — c'est le parti pris sobre du site.
+Si vous souhaitez un jour mettre une image en fond de bandeau, déposez un fichier large
+(1600 pixels au moins) dans le dossier `images` et écrivez son nom entre les guillemets :
+le bandeau passera automatiquement en fond sombre, avec le titre en blanc par-dessus.
 
 ### La fiche d'identification d'un tableau
 

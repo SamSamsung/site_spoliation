@@ -7,8 +7,10 @@
     "sur_titre": "Le traitement administratif des réclamations — 1/3",
     "titre": "Les réclamations auprès des autorités françaises",
     "chapo": "Dès juin 1945, Raoul Meyer saisit l'Office des Biens et Intérêts privés. L'inscription des cinq œuvres au Répertoire des biens spoliés vaut reconnaissance administrative officielle de leur rattachement au processus français de recherche et de restitution.",
-    "image": "banniere-demarches-francaises.jpg",
-    "credit_image": "Archives familiales"
+    // Bandeau sans photographie : le titre s'affiche alors sur fond clair.
+    // Pour mettre une image de fond, déposez un fichier dans le dossier
+    // « images » puis écrivez son nom entre les guillemets ci-dessous.
+    "image": ""
   },
 
   "sections": [

@@ -7,8 +7,10 @@
     "sur_titre": "Le traitement administratif des réclamations — 3/3",
     "titre": "Les écarts de dimensions et de titres",
     "chapo": "Les mesures et les intitulés varient d'une source à l'autre. La concordance entre les tableaux déclarés spoliés et ceux figurant dans les archives repose non sur ces éléments, mais sur un faisceau d'indices convergents.",
-    "image": "banniere-ecarts.jpg",
-    "credit_image": "Répertoire des biens spoliés en France durant la guerre 1939-1945"
+    // Bandeau sans photographie : le titre s'affiche alors sur fond clair.
+    // Pour mettre une image de fond, déposez un fichier dans le dossier
+    // « images » puis écrivez son nom entre les guillemets ci-dessous.
+    "image": ""
   },
 
   "sections": [

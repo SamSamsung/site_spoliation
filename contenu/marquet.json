@@ -9,8 +9,10 @@
     "titre": "Albert Marquet",
     "sous_titre": "« Les bords de la Seine à Paris sous la neige » ou « Pont Saint-Michel »",
     "chapo": "Inventorié par l'ERR sous la référence Meyer 6, ce tableau porte la mention « retourné à la M-Aktion pour vente » et fut réservé pour un échange planifié avec le marchand Martin Fabiani. Son sort demeure inconnu.",
-    "image": "banniere-marquet.jpg",
-    "credit_image": "Archives Nationales d'Allemagne B 323 914"
+    // Bandeau sans photographie : le titre s'affiche alors sur fond clair.
+    // Pour mettre une image de fond, déposez un fichier dans le dossier
+    // « images » puis écrivez son nom entre les guillemets ci-dessous.
+    "image": ""
   },
 
   "fiche": [
@@ -103,7 +105,12 @@
       "visuels": [
         {
           "fichier": "marquet-registres-pusey-beaumont-crassier.jpg",
-          "legende": "Extrait des registres de la maison Pusey Beaumont Crassier.",
+          "legende": "Extrait des registres de la maison Pusey Beaumont Crassier : sous le n° 27, la mention « 14 peintures Rosenberg Paris » suivie de la référence « Meyer 6 ».",
+          "credit": "Archives MEAE 209SUP/107"
+        },
+        {
+          "fichier": "marquet-registres-pusey-beaumont-crassier-entete.jpg",
+          "legende": "En-tête de la page du registre : « S. Louvre akt. Mod. Bilder vom Juli 43 » — séquestre du Louvre, tableaux modernes, juillet 1943.",
           "credit": "Archives MEAE 209SUP/107"
         }
       ]

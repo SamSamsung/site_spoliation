@@ -7,8 +7,10 @@
     "sur_titre": "Le traitement administratif des réclamations — 2/3",
     "titre": "Les réclamations auprès de l'État allemand",
     "chapo": "En 1961, les autorités ouest-allemandes statuent sur les demandes de Raoul Meyer dans le cadre de la loi BRüG. Un rejet pour le Bonnard, la clôture de la procédure pour les autres : la charge de prouver que l'œuvre avait franchi la frontière de la RFA s'est révélée un obstacle insurmontable.",
-    "image": "banniere-demarches-allemandes.jpg",
-    "credit_image": "Archives MEAE 209SUP/506"
+    // Bandeau sans photographie : le titre s'affiche alors sur fond clair.
+    // Pour mettre une image de fond, déposez un fichier dans le dossier
+    // « images » puis écrivez son nom entre les guillemets ci-dessous.
+    "image": ""
   },
 
   "sections": [
@@ -28,13 +30,6 @@
       "paragraphes": [
         "La décision concernant les tableaux spoliés de Raoul Meyer fut rendue par les autorités ouest-allemandes le 16 mars 1961, statuant sur la demande n° 568 du 13 décembre 1955 transmise par les autorités françaises (Archives MEAE 209SUP/506). Elle s'appuie également sur la note en date du 26 janvier 1961 transmise aux autorités allemandes par Rose Valland, au nom de la direction des Musées de France, Service de Protection des Œuvres d'Art (Archives Nationales d'Allemagne B 323 429).",
         "Les autorités allemandes adoptèrent une décision de rejet pour le tableau de Pierre Bonnard, « Jeune femme prenant une tasse de thé », considérant que ce tableau ne pouvait se trouver en Allemagne. Pour les autres tableaux, les autorités prononcèrent la clôture de la procédure, faute de preuve de leur localisation exacte en Allemagne."
-      ],
-      "visuels": [
-        {
-          "fichier": "decision-16-mars-1961-209sup-506.jpg",
-          "legende": "Décision rendue le 16 mars 1961 par les autorités ouest-allemandes sur la demande n° 568 du 13 décembre 1955.",
-          "credit": "Archives MEAE 209SUP/506"
-        }
       ]
     },
 

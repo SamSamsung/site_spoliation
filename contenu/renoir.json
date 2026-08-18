@@ -9,8 +9,10 @@
     "titre": "Pierre-Auguste Renoir",
     "sous_titre": "« Le Cannet » ou « Paysage avec des jeunes femmes et un bébé »",
     "chapo": "Acheté par M. et Mme Meyer à la vente de la collection Maurice Gangnat en 1925, ce tableau peint en 1901 est envoyé par l'ERR au château de Nikolsburg en novembre 1943. La forteresse fut gravement incendiée à la fin de la guerre ; le sort du tableau demeure inconnu.",
-    "image": "banniere-renoir.jpg",
-    "credit_image": "Catalogue de la vente du 24 juin 1925"
+    // Bandeau sans photographie : le titre s'affiche alors sur fond clair.
+    // Pour mettre une image de fond, déposez un fichier dans le dossier
+    // « images » puis écrivez son nom entre les guillemets ci-dessous.
+    "image": ""
   },
 
   "fiche": [
@@ -41,8 +43,13 @@
       ],
       "visuels": [
         {
-          "fichier": "renoir-catalogue-vente-gangnat-1925.jpg",
-          "legende": "Notice n° 117 du catalogue de la vente de la collection Maurice Gangnat, 24 juin 1925.",
+          "fichier": "renoir-catalogue-vente-gangnat-1925-couverture.jpg",
+          "legende": "Couverture du catalogue : « 160 tableaux par Renoir » composant la collection Maurice Gangnat, Hôtel Drouot, 24 et 25 juin 1925.",
+          "credit": "Catalogue de la vente du 24 juin 1925"
+        },
+        {
+          "fichier": "renoir-catalogue-vente-gangnat-1925-planche.jpg",
+          "legende": "La planche du catalogue reproduisant « Le Cannet », 1901.",
           "credit": "Catalogue de la vente du 24 juin 1925"
         }
       ]

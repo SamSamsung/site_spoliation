@@ -9,8 +9,10 @@
     "titre": "Camille Pissarro",
     "sous_titre": "« La cavée, plein midi » ou « La cavée à Eragny, plein midi »",
     "chapo": "Acquis par Yvonne Meyer en 1932, ce tableau signé et daté 1887 est spolié en février 1941, puis échangé le 25 février 1942 par l'ERR avec le marchand Gustav Rochlitz, pour le compte d'Hermann Göring. Rochlitz affirme l'avoir perdu lors d'un transport vers Baden-Baden en juin 1944 : la trace du tableau s'arrête là.",
-    "image": "banniere-pissarro.jpg",
-    "credit_image": "Photo Durand-Ruel — catalogue de la vente Gaston Lévy, 17 novembre 1932"
+    // Bandeau sans photographie : le titre s'affiche alors sur fond clair.
+    // Pour mettre une image de fond, déposez un fichier dans le dossier
+    // « images » puis écrivez son nom entre les guillemets ci-dessous.
+    "image": ""
   },
 
   "fiche": [
@@ -65,8 +67,18 @@
           "credit": "Photo Durand-Ruel — extrait du catalogue de la vente du 17 novembre 1932"
         },
         {
-          "fichier": "pissarro-catalogue-raisonne-venturi-1939.jpg",
-          "legende": "Notice du tableau dans le catalogue raisonné de Lionello Venturi et Ludovic Rodo Pissarro, 1939.",
+          "fichier": "pissarro-catalogue-raisonne-venturi-1939-titre.jpg",
+          "legende": "Page de titre du catalogue raisonné « Camille Pissarro, son art — son œuvre », par Ludovic Rodo Pissarro et Lionello Venturi, Paul Rosenberg éditeur, 1939.",
+          "credit": "Catalogue raisonné Venturi / Ludovic Rodo Pissarro, 1939"
+        },
+        {
+          "fichier": "pissarro-catalogue-raisonne-venturi-1939-notice.jpg",
+          "legende": "Notice n° 715 du catalogue raisonné, page 181 : « 1887. La cavée à Eragny, plein midi. Signé en bas à droite, daté 1887. H : 73 ; L : 92. » La provenance mentionne la vente de la collection Gaston Lévy du 17 novembre 1932, n° 93.",
+          "credit": "Catalogue raisonné Venturi / Ludovic Rodo Pissarro, 1939"
+        },
+        {
+          "fichier": "pissarro-catalogue-raisonne-venturi-1939-planche.jpg",
+          "legende": "La planche n° 715 du catalogue raisonné reproduisant le tableau.",
           "credit": "Catalogue raisonné Venturi / Ludovic Rodo Pissarro, 1939"
         }
       ]
@@ -82,8 +94,13 @@
       ],
       "visuels": [
         {
+          "fichier": "pissarro-references-unb-323-297.jpg",
+          "legende": "Relevé des références UNB attribuées aux tableaux de Camille Pissarro : la référence UNB 350 y figure.",
+          "credit": "Archives Nationales d'Allemagne 323 297"
+        },
+        {
           "fichier": "pissarro-fiche-unb350-323-297.jpg",
-          "legende": "Fiche d'inventaire de l'ERR sous la référence UNB 350.",
+          "legende": "Fiche d'inventaire de l'ERR sous la référence UNB 350 : « Camille Pissarro 1830-1903, route de campagne avec paysans », huile sur toile, format horizontal, signée en bas à droite et datée 1887.",
           "credit": "Archives Nationales d'Allemagne 323 297"
         },
         {
@@ -93,8 +110,8 @@
           "traduction": "Traduction libre des annotations manuscrites : « Échange 14 ERR – Rochlitz (pour Göring). Disparu lors du transport de Paris à Baden-Baden, juin 1944. Probablement (doublement barré) identique à Raoul Meyer 3. » — Traduction libre des mentions dactylographiées : « UNB 350 Camille Pissarro (1830-1903). Route de campagne avec paysans ; sur le côté gauche, petite maison dans un jardin. À l'arrière-plan, groupe d'arbres. Tableau d'été. Huile sur toile. Format horizontal. Signé en bas à droite : C. Pissarro 1887. »"
         },
         {
-          "fichier": "pissarro-inventaire-valland-jeu-de-paume.jpg",
-          "legende": "Inventaire réalisé par Rose Valland : le tableau est recensé parmi les œuvres entreposées au musée du Jeu de Paume.",
+          "fichier": "pissarro-releve-oeuvres-madame-meyer-209sup-406.jpg",
+          "legende": "Relevé manuscrit des œuvres de Madame Meyer entreposées au Jeu de Paume : le Pissarro de 1887, « femmes allant au travail », huile sur toile 74 × 92, y figure au n° 3.",
           "credit": "Archives MEAE 209SUP/406"
         }
       ]
@@ -124,7 +141,7 @@
         },
         {
           "fichier": "pissarro-notes-valland-lohse.jpg",
-          "legende": "Notes de Rose Valland relatives au retrait du tableau du Jeu de Paume par Bruno Lohse.",
+          "legende": "« Tableaux emportés du Musée du Jeu de Paume le 3.3.1942 par le Dr Lohse » : « Pissarro : “A la Campagne”, signé et daté 1887, coll. Meyer, 66 × 80 ».",
           "credit": "Archives Nationales, Pierrefitte-sur-Seine, cote 20144792/276 — et Archives MEAE 209SUP/917"
         },
         {
@@ -134,7 +151,12 @@
         },
         {
           "fichier": "pissarro-inventaire-jeu-de-paume-10-03-1942.jpg",
-          "legende": "Inventaire des tableaux entreposés au Jeu de Paume à la date du 10 mars 1942 : le tableau y figure encore.",
+          "legende": "« Copie d'un inventaire allemand — Œuvres d'art moderne réunies au Jeu de Paume à la date du 10 mars 1942. Ces œuvres furent choisies comme étant les meilleures parmi les peintures modernes prises par le Service Rosenberg. »",
+          "credit": "Archives MEAE 209SUP/406"
+        },
+        {
+          "fichier": "pissarro-inventaire-jeu-de-paume-10-03-1942-coll-meyer.jpg",
+          "legende": "Le relevé de la collection de Madame Meyer dans cet inventaire : le Pissarro y figure au n° 3, « Femmes allant au travail », huile sur toile 74 × 92.",
           "credit": "Archives MEAE 209SUP/406"
         },
         {

@@ -154,10 +154,28 @@ graphiques** :
 
 ---
 
-## 5. Ce qu'il reste à faire
+## 5. L'origine des visuels
 
-Les textes sont intégralement repris du document source (hors section I). **Les images,
-elles, restent à déposer** : les 66 emplacements prévus sont déjà déclarés, avec leur
-légende et leur crédit. Le fichier `images/LISEZ-MOI.txt` en donne la liste complète,
-nom de fichier par nom de fichier. Tant qu'une image est absente, le site affiche à sa
-place un rectangle en pointillés portant le nom attendu.
+Les textes sont intégralement repris du document source (hors section I).
+
+Les **57 visuels du document Word ont été importés automatiquement**, puis replacés
+chacun à son emplacement d'origine : le format `.docx` conserve la position de chaque
+image dans le flux du texte, ce qui a permis de rattacher chaque visuel à la légende
+et au crédit qui l'accompagnent dans le document. S'y ajoutent **5 vignettes** — les
+reproductions des cinq tableaux, extraites des photographies de l'ERR et des catalogues
+de vente — qui illustrent les cartes de la page d'accueil.
+
+Deux points techniques méritent d'être signalés :
+
+- Un des visuels (la couverture du catalogue de la vente Gaston Lévy de 1932) était
+  enregistré dans le document Word au format métafichier `.emf`, illisible par un
+  navigateur. La photographie haute définition qu'il contenait — 1816 × 2235 pixels,
+  la meilleure définition de tout le dossier — en a été extraite et convertie.
+- Les images sont affichées au plus à leur définition réelle, jamais agrandies au-delà :
+  une image agrandie artificiellement paraîtrait floue. Les documents d'archives peu
+  définis restent donc modestes en taille sur la page, mais l'agrandissement au clic
+  permet de les examiner.
+
+Le fichier `images/LISEZ-MOI.txt` donne la liste complète, page par page. Pour remplacer
+un visuel par un scan de meilleure qualité, il suffit de déposer le nouveau fichier sous
+le même nom.

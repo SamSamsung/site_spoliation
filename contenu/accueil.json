@@ -20,8 +20,10 @@
     "chapo": "En février 1941, la collection de peintures de Raoul et Yvonne Meyer est saisie dans les coffres de l'agence du Crédit Commercial de France de Mont-de-Marsan, puis remise à l'Einsatzstab Reichsleiter Rosenberg. Plusieurs œuvres ont été restituées après la guerre. Cinq tableaux n'ont jamais été localisés.",
     // Image de fond du bandeau : déposez le fichier dans /images.
     // Laissez "" (deux guillemets vides) si vous ne voulez aucune image.
-    "image": "banniere-accueil.jpg",
-    "credit_image": "Archives familiales"
+    // Bandeau sans photographie : le titre s'affiche alors sur fond clair.
+    // Pour mettre une image de fond, déposez un fichier dans le dossier
+    // « images » puis écrivez son nom entre les guillemets ci-dessous.
+    "image": ""
   },
 
   // --- Sections de la page -------------------------------------------------
