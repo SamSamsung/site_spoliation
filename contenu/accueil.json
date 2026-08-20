@@ -15,7 +15,7 @@
 
   // --- Bandeau d'ouverture -------------------------------------------------
   "banniere": {
-    "sur_titre": "1941 — Mont-de-Marsan, Paris, Jeu de Paume",
+    "sur_titre": "1941 — Mont-de-Marsan — Paris",
     "titre": "La collection spoliée de Raoul et Yvonne Meyer",
     "chapo": "En février 1941, la collection de peintures de Raoul et Yvonne Meyer est saisie dans les coffres de l'agence du Crédit Commercial de France de Mont-de-Marsan, puis remise à l'Einsatzstab Reichsleiter Rosenberg. Plusieurs œuvres ont été restituées après la guerre. Cinq tableaux n'ont jamais été localisés.",
     // Image de fond du bandeau : déposez le fichier dans /images.
@@ -32,7 +32,7 @@
     // ---------------------------------------------------------------------
     {
       "ancre": "les-cinq-tableaux",
-      "titre": "Les cinq tableaux non localisés",
+      "titre": "Cinq tableaux non localisés",
       "chapo": "Cliquez sur une œuvre pour accéder à son dossier documentaire : identification, dimensions, parcours connu, références d'archives et visuels associés.",
       // Le mot-clé ci-dessous affiche automatiquement les vignettes des cinq
       // tableaux décrits dans le fichier site.json. Ne le modifiez pas.

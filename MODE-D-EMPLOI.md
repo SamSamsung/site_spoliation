@@ -485,6 +485,38 @@ Ils se trouvent dans `contenu/site.json`. Vous pouvez y changer le nom du site,
 le libellé d'une entrée de menu, ou l'image d'une vignette de la page d'accueil.
 **Ne modifiez pas les `"lien"`** : ce sont les adresses des pages.
 
+Le menu comporte quatre entrées. Deux d'entre elles ouvrent un **menu déroulant** :
+au lieu d'un `"lien"`, elles ont une liste `"sous_menu"`.
+
+```json
+"navigation": [
+
+  { "libelle": "Accueil", "lien": "index.html" },
+
+  {
+    "libelle": "Les tableaux disparus",
+    "sous_menu": [
+      { "libelle": "Bonnard",  "lien": "tableaux/bonnard.html" },
+      { "libelle": "Marquet",  "lien": "tableaux/marquet.html" },
+      { "libelle": "Pissarro", "lien": "tableaux/pissarro.html" },
+      { "libelle": "Renoir",   "lien": "tableaux/renoir.html" },
+      { "libelle": "Soutine",  "lien": "tableaux/modigliani-soutine.html" }
+    ]
+  },
+
+  { "libelle": "Dimensions et titres", "lien": "demarches/ecarts-dimensions-titres.html" }
+]
+```
+
+- Pour **renommer** une entrée ou une sous-entrée : changez son `"libelle"`.
+- Pour **changer l'ordre** des tableaux dans le menu déroulant : déplacez leurs
+  blocs `{ … }` à l'intérieur de la liste `"sous_menu"`.
+- Pour **transformer** une entrée simple en menu déroulant : remplacez sa ligne
+  `"lien"` par une liste `"sous_menu"` bâtie sur le modèle ci-dessus.
+
+L'**ordre des vignettes sur la page d'accueil** est réglé séparément, par la liste
+`"tableaux"` du même fichier : pour le modifier, déplacez-y les blocs `{ … }`.
+
 ---
 
 ## 9. Prévisualiser le site sur votre ordinateur

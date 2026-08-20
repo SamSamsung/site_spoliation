@@ -28,7 +28,6 @@ QUALITÉ DES FICHIERS
   d'origine (de 350 à 1 800 pixels de large). Si vous disposez de scans de
   meilleure qualité pour certains documents d'archives, remplacez-les :
   ils gagneront en lisibilité une fois agrandis à l'écran.
-
 -----------------------------------------------------------------------------
   Vignettes de la page d'accueil (fichier contenu/site.json)
 -----------------------------------------------------------------------------
@@ -41,8 +40,7 @@ QUALITÉ DES FICHIERS
       neige »
 
   vignette-modigliani-soutine.jpg
-      Vignette — Amedeo Modigliani / Chaïm Soutine, « La porteuse de pain
-      »
+      Vignette — Chaïm Soutine, « La porteuse de pain »
 
   vignette-renoir.jpg
       Vignette — Pierre-Auguste Renoir, « Le Cannet »
@@ -122,7 +120,7 @@ QUALITÉ DES FICHIERS
       Juli 43 » — séquestre du Louvre, tableaux modernes, juillet 1943.
 
 -----------------------------------------------------------------------------
-  Page Modigliani / Soutine (contenu/modigliani-soutine.json)
+  Page Chaïm Soutine (contenu/modigliani-soutine.json)
 -----------------------------------------------------------------------------
 
   modigliani-soutine-fiche-err-nara.jpg

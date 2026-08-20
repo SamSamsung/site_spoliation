@@ -145,6 +145,11 @@ a:hover { color: var(--accent-clair); }
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+/* La liste principale seule est disposée en ligne : les sous-menus, eux,
+   restent des listes verticales. */
+.navigation > ul {
   display: flex;
   flex-wrap: wrap;
   gap: 0.15rem 0.85rem;
@@ -167,6 +172,66 @@ a:hover { color: var(--accent-clair); }
   border-bottom-color: var(--accent);
 }
 
+/* --- Menus déroulants ---------------------------------------------------- */
+
+.navigation__groupe { position: relative; }
+
+.navigation__declencheur {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--encre-douce);
+  background: none;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  padding: 0.35rem 0;
+  cursor: pointer;
+}
+.navigation__declencheur:hover { color: var(--accent); }
+
+.navigation__groupe.est-active > .navigation__declencheur {
+  color: var(--encre);
+  border-bottom-color: var(--accent);
+}
+
+.navigation__chevron {
+  font-size: 0.7em;
+  transition: transform 0.15s ease;
+}
+.navigation__groupe.est-deploye .navigation__chevron { transform: rotate(180deg); }
+
+.navigation .navigation__sous-menu { display: none; }
+.navigation .navigation__groupe.est-deploye > .navigation__sous-menu { display: block; }
+
+@media (min-width: 901px) {
+  .navigation__sous-menu {
+    position: absolute;
+    top: 100%;
+    left: -1.1rem;
+    min-width: 14rem;
+    background: var(--surface);
+    border: 1px solid var(--filet);
+    box-shadow: 0 12px 30px rgba(30, 25, 20, 0.13);
+    padding: 0.35rem 0;
+    z-index: 120;
+  }
+  .navigation__sous-menu a {
+    display: block;
+    width: 100%;
+    padding: 0.6rem 1.1rem;
+    border-bottom: 0;
+  }
+  .navigation__sous-menu a:hover { background: var(--papier-fonce); }
+  .navigation__sous-menu a[aria-current="page"] {
+    color: var(--accent);
+    border-bottom: 0;
+  }
+}
+
 @media (max-width: 900px) {
   .entete__bouton { display: block; }
   .navigation {
@@ -174,13 +239,23 @@ a:hover { color: var(--accent-clair); }
     display: none;
   }
   .navigation.est-ouverte { display: block; }
-  .navigation ul {
+  .navigation > ul {
     flex-direction: column;
     gap: 0;
     padding-top: 0.5rem;
   }
-  .navigation li { border-top: 1px solid var(--filet); }
+  .navigation > ul > li { border-top: 1px solid var(--filet); }
   .navigation a { padding: 0.7rem 0; width: 100%; }
+
+  .navigation__declencheur {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.7rem 0;
+  }
+  .navigation__sous-menu {
+    padding: 0 0 0.5rem 1.1rem;
+  }
+  .navigation__sous-menu a { padding: 0.55rem 0; }
 }
 
 /* --------------------------------------------------------------------------
@@ -641,8 +716,10 @@ a:hover { color: var(--accent-clair); }
   padding: 1.1rem;
 }
 .vignette__cadre img {
+  /* La hauteur est plafonnée pour que les œuvres en hauteur gardent, elles
+     aussi, une marge visible en haut et en bas, comme les œuvres en largeur. */
   max-width: 100%;
-  max-height: 100%;
+  max-height: 86%;
   width: auto;
   height: auto;
   object-fit: contain;
@@ -834,9 +911,19 @@ a:hover { color: var(--accent-clair); }
 .pied p { margin: 0 0 0.9rem; font-size: 0.95rem; }
 .pied ul { list-style: none; margin: 0; padding: 0; }
 .pied li { margin-bottom: 0.55rem; }
+.pied__groupe {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #a49a8d;
+  margin-bottom: 0.4rem;
+}
+.pied__sous-liste { padding-left: 0.9rem; }
 .pied a { color: #f0e9de; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.25); }
 .pied a:hover { color: #fff; border-bottom-color: #fff; }
-.pied__mention {
+.pied .pied__mention {
   max-width: var(--largeur-large);
   margin: 2.5rem auto 0;
   padding-top: 1.5rem;

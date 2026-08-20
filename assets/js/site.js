@@ -116,15 +116,12 @@
     nav.setAttribute("aria-label", "Navigation principale");
     var liste = creer("ul");
 
-    (site.navigation || []).forEach(function (entree) {
-      var li = creer("li");
-      var lien = creer("a", null, entree.libelle);
-      lien.href = racine + entree.lien;
-      if (entree.lien === corps.getAttribute("data-lien")) {
-        lien.setAttribute("aria-current", "page");
-      }
-      li.appendChild(lien);
-      liste.appendChild(li);
+    (site.navigation || []).forEach(function (entree, rang) {
+      liste.appendChild(
+        entree.sous_menu && entree.sous_menu.length
+          ? construireGroupeDeMenu(entree, rang)
+          : construireEntreeDeMenu(entree)
+      );
     });
 
     nav.appendChild(liste);
@@ -135,6 +132,90 @@
       var ouvert = nav.classList.toggle("est-ouverte");
       bouton.setAttribute("aria-expanded", ouvert ? "true" : "false");
     });
+
+    // La touche Échap referme tous les menus déroulants ouverts.
+    document.addEventListener("keydown", function (evenement) {
+      if (evenement.key !== "Escape") { return; }
+      nav.querySelectorAll(".navigation__groupe.est-deploye").forEach(function (groupe) {
+        replierGroupe(groupe);
+      });
+    });
+  }
+
+  /* Une entrée simple du menu : un lien vers une page. */
+  function construireEntreeDeMenu(entree) {
+    var li = creer("li");
+    var lien = creer("a", null, entree.libelle);
+    lien.href = racine + entree.lien;
+    if (entree.lien === corps.getAttribute("data-lien")) {
+      lien.setAttribute("aria-current", "page");
+    }
+    li.appendChild(lien);
+    return li;
+  }
+
+  /* Une entrée du menu qui ouvre un menu déroulant. */
+  function construireGroupeDeMenu(entree, rang) {
+    var lienCourant = corps.getAttribute("data-lien");
+
+    var li = creer("li", "navigation__groupe");
+
+    var bouton = creer("button", "navigation__declencheur");
+    bouton.type = "button";
+    bouton.appendChild(document.createTextNode(entree.libelle));
+    var chevron = creer("span", "navigation__chevron", "▾");
+    chevron.setAttribute("aria-hidden", "true");
+    bouton.appendChild(chevron);
+    bouton.setAttribute("aria-expanded", "false");
+
+    var sousListe = creer("ul", "navigation__sous-menu");
+    sousListe.id = "sous-menu-" + rang;
+    bouton.setAttribute("aria-controls", sousListe.id);
+
+    var contientLaPage = false;
+    entree.sous_menu.forEach(function (sousEntree) {
+      if (sousEntree.lien === lienCourant) { contientLaPage = true; }
+      sousListe.appendChild(construireEntreeDeMenu(sousEntree));
+    });
+    if (contientLaPage) { li.classList.add("est-active"); }
+
+    li.appendChild(bouton);
+    li.appendChild(sousListe);
+
+    bouton.addEventListener("click", function () {
+      li.classList.contains("est-deploye") ? replierGroupe(li) : deployerGroupe(li);
+    });
+
+    // À la souris, sur grand écran, le menu s'ouvre au survol.
+    li.addEventListener("mouseenter", function () {
+      if (grandEcran()) { deployerGroupe(li); }
+    });
+    li.addEventListener("mouseleave", function () {
+      if (grandEcran()) { replierGroupe(li); }
+    });
+
+    // Au clavier, le menu se referme dès que le focus en sort.
+    li.addEventListener("focusout", function (evenement) {
+      if (!li.contains(evenement.relatedTarget)) { replierGroupe(li); }
+    });
+
+    return li;
+  }
+
+  function grandEcran() {
+    return window.matchMedia("(min-width: 901px)").matches;
+  }
+
+  function deployerGroupe(groupe) {
+    groupe.classList.add("est-deploye");
+    var bouton = groupe.querySelector(".navigation__declencheur");
+    if (bouton) { bouton.setAttribute("aria-expanded", "true"); }
+  }
+
+  function replierGroupe(groupe) {
+    groupe.classList.remove("est-deploye");
+    var bouton = groupe.querySelector(".navigation__declencheur");
+    if (bouton) { bouton.setAttribute("aria-expanded", "false"); }
   }
 
   function construireBandeau(banniere) {
@@ -461,9 +542,22 @@
     var liste = creer("ul");
     (site.navigation || []).forEach(function (entree) {
       var li = creer("li");
-      var lien = creer("a", null, entree.libelle);
-      lien.href = racine + entree.lien;
-      li.appendChild(lien);
+      if (entree.sous_menu && entree.sous_menu.length) {
+        li.appendChild(creer("span", "pied__groupe", entree.libelle));
+        var sousListe = creer("ul", "pied__sous-liste");
+        entree.sous_menu.forEach(function (sousEntree) {
+          var sousLi = creer("li");
+          var sousLien = creer("a", null, sousEntree.libelle);
+          sousLien.href = racine + sousEntree.lien;
+          sousLi.appendChild(sousLien);
+          sousListe.appendChild(sousLi);
+        });
+        li.appendChild(sousListe);
+      } else {
+        var lien = creer("a", null, entree.libelle);
+        lien.href = racine + entree.lien;
+        li.appendChild(lien);
+      }
       liste.appendChild(li);
     });
     colonneLiens.appendChild(liste);

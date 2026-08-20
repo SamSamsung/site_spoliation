@@ -16,20 +16,42 @@
 
   // --- Identité du site (affichée en haut de chaque page) ------------------
   "titre_site": "La collection spoliée de Raoul et Yvonne Meyer",
-  "sous_titre_site": "Cinq tableaux jamais localisés",
+  "sous_titre_site": "Les tableaux disparus",
 
   // --- Menu de navigation, présent en haut de toutes les pages -------------
-  //     "libelle" = ce qui est écrit dans le menu
-  //     "lien"    = le fichier de la page (ne pas modifier sans raison)
+  //     Le menu comporte quatre entrées. Deux d'entre elles ouvrent un menu
+  //     déroulant : elles ont une liste "sous_menu" au lieu d'un "lien".
+  //
+  //       "libelle"   = ce qui est écrit dans le menu
+  //       "lien"      = le fichier de la page (ne pas modifier sans raison)
+  //       "sous_menu" = la liste des entrées du menu déroulant
+  //
+  //     Pour renommer une entrée, changez son "libelle".
+  //     Pour changer l'ordre des tableaux dans le menu déroulant, déplacez
+  //     leurs blocs { … } à l'intérieur de la liste "sous_menu".
   "navigation": [
-    { "libelle": "Accueil",              "lien": "index.html" },
-    { "libelle": "Bonnard",              "lien": "tableaux/bonnard.html" },
-    { "libelle": "Marquet",              "lien": "tableaux/marquet.html" },
-    { "libelle": "Modigliani",          "lien": "tableaux/modigliani-soutine.html" },
-    { "libelle": "Renoir",               "lien": "tableaux/renoir.html" },
-    { "libelle": "Pissarro",             "lien": "tableaux/pissarro.html" },
-    { "libelle": "Autorités françaises", "lien": "demarches/autorites-francaises.html" },
-    { "libelle": "Autorités allemandes", "lien": "demarches/autorites-allemandes.html" },
+
+    { "libelle": "Accueil", "lien": "index.html" },
+
+    {
+      "libelle": "Les tableaux disparus",
+      "sous_menu": [
+        { "libelle": "Bonnard",  "lien": "tableaux/bonnard.html" },
+        { "libelle": "Marquet",  "lien": "tableaux/marquet.html" },
+        { "libelle": "Pissarro", "lien": "tableaux/pissarro.html" },
+        { "libelle": "Renoir",   "lien": "tableaux/renoir.html" },
+        { "libelle": "Soutine",  "lien": "tableaux/modigliani-soutine.html" }
+      ]
+    },
+
+    {
+      "libelle": "Les demandes de restitution",
+      "sous_menu": [
+        { "libelle": "Autorités françaises", "lien": "demarches/autorites-francaises.html" },
+        { "libelle": "Autorités allemandes", "lien": "demarches/autorites-allemandes.html" }
+      ]
+    },
+
     { "libelle": "Dimensions et titres", "lien": "demarches/ecarts-dimensions-titres.html" }
   ],
 
@@ -60,7 +82,7 @@
       "lien": "tableaux/marquet.html"
     },
     {
-      "artiste": "Amedeo Modigliani / Chaïm Soutine",
+      "artiste": "Chaïm Soutine",
       "titre": "La porteuse de pain",
       "mention": "ERR Meyer 9 — n° 4152 au RBS",
       "image": "vignette-modigliani-soutine.jpg",
