@@ -19,10 +19,28 @@
      Outils de base
      ---------------------------------------------------------------------- */
 
+  /* Applique les règles de la typographie française : les espaces qui suivent
+     un guillemet ouvrant, qui précèdent un guillemet fermant, ou qui précèdent
+     un deux-points, un point-virgule, un point d'exclamation ou d'interrogation
+     deviennent des espaces insécables. Un guillemet ne peut ainsi jamais se
+     retrouver seul en bout de ligne, séparé du mot qu'il encadre.
+
+     Rien à faire de votre côté : dans les fichiers de contenu, tapez vos textes
+     avec des espaces ordinaires, le site s'occupe du reste. */
+  var INSECABLE = "\u00A0";
+
+  function typographie(texte) {
+    if (typeof texte !== "string") { return texte; }
+    return texte
+      .replace(/«[ \t\u00A0]*/g, "«" + INSECABLE)
+      .replace(/[ \t\u00A0]*»/g, INSECABLE + "»")
+      .replace(/[ \t]+([:;!?])/g, INSECABLE + "$1");
+  }
+
   function creer(balise, classe, texte) {
     var element = document.createElement(balise);
     if (classe) { element.className = classe; }
-    if (texte !== undefined && texte !== null) { element.textContent = texte; }
+    if (texte !== undefined && texte !== null) { element.textContent = typographie(texte); }
     return element;
   }
 
@@ -194,7 +212,7 @@
       // Libellé non cliquable : le libellé entier sert de déclencheur.
       bouton = creer("button", "navigation__declencheur");
       bouton.type = "button";
-      bouton.appendChild(document.createTextNode(entree.libelle));
+      bouton.appendChild(document.createTextNode(typographie(entree.libelle)));
       var chevron = creer("span", "navigation__chevron", "▾");
       chevron.setAttribute("aria-hidden", "true");
       bouton.appendChild(chevron);
@@ -675,8 +693,8 @@
     loupeZoom.textContent = "Agrandir encore";
     loupeImage.src = chemin;
     loupeImage.alt = texteAlternatif;
-    loupeLegende.textContent = legende || "";
-    loupeCredit.textContent = credit ? "Source : " + credit : "";
+    loupeLegende.textContent = typographie(legende || "");
+    loupeCredit.textContent = credit ? typographie("Source : " + credit) : "";
     loupe.hidden = false;
     document.documentElement.style.overflow = "hidden";
     loupeZoom.focus();
