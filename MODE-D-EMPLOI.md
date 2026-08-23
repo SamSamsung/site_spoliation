@@ -42,6 +42,7 @@ site_spoliation/
 │   ├── modigliani-soutine.json      (page « La porteuse de pain »)
 │   ├── renoir.json                  (page du tableau de Renoir)
 │   ├── pissarro.json                (page du tableau de Pissarro)
+│   ├── demandes-de-restitution.json (page « Les demandes de restitution »)
 │   ├── demarches-francaises.json    (page « Autorités françaises »)
 │   ├── demarches-allemandes.json    (page « Autorités allemandes »)
 │   └── ecarts-dimensions-titres.json(page « Dimensions et titres »)

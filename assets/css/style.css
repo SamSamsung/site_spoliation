@@ -204,6 +204,30 @@ a:hover { color: var(--accent-clair); }
 }
 .navigation__groupe.est-deploye .navigation__chevron { transform: rotate(180deg); }
 
+/* Entrée à la fois cliquable et déroulante : le libellé est un lien, la petite
+   flèche placée à côté est un bouton qui déroule le sous-menu. */
+.navigation__entete-groupe {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.navigation__fleche {
+  font-size: 0.62rem;
+  line-height: 1;
+  color: var(--encre-legere);
+  background: none;
+  border: 0;
+  padding: 0.35rem 0.15rem;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+.navigation__fleche:hover { color: var(--accent); }
+.navigation__groupe.est-deploye .navigation__fleche { transform: rotate(180deg); }
+.navigation__groupe.est-active > .navigation__entete-groupe > a {
+  color: var(--encre);
+  border-bottom-color: var(--accent);
+}
+
 .navigation .navigation__sous-menu { display: none; }
 .navigation .navigation__groupe.est-deploye > .navigation__sous-menu { display: block; }
 
@@ -252,6 +276,14 @@ a:hover { color: var(--accent-clair); }
     justify-content: space-between;
     padding: 0.7rem 0;
   }
+  .navigation__entete-groupe {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navigation__entete-groupe > a { width: auto; }
+  .navigation__fleche { padding: 0.7rem 0.4rem; font-size: 0.75rem; }
   .navigation__sous-menu {
     padding: 0 0 0.5rem 1.1rem;
   }
@@ -705,21 +737,22 @@ a:hover { color: var(--accent-clair); }
 }
 
 .vignette__cadre {
-  /* Cadre carré : les œuvres en hauteur comme en largeur y tiennent entières.
-     L'image est affichée en entier (jamais rognée), centrée sur le fond. */
-  aspect-ratio: 1 / 1;
+  /* Cadre légèrement en hauteur : les œuvres en hauteur (la porteuse de pain)
+     y tiennent entières et à bonne taille, sans écraser les œuvres en largeur.
+     L'image est toujours affichée en entier, jamais rognée, et centrée. */
+  aspect-ratio: 4 / 5;
   overflow: hidden;
   background: var(--papier-fonce);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.1rem;
+  padding: 1.4rem;
 }
 .vignette__cadre img {
-  /* La hauteur est plafonnée pour que les œuvres en hauteur gardent, elles
-     aussi, une marge visible en haut et en bas, comme les œuvres en largeur. */
+  /* La marge intérieure du cadre, identique pour les cinq œuvres, tient lieu
+     de marge : aucune n'atteint jamais le bord. */
   max-width: 100%;
-  max-height: 86%;
+  max-height: 100%;
   width: auto;
   height: auto;
   object-fit: contain;

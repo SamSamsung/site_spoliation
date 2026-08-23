@@ -127,15 +127,15 @@ QUALITÉ DES FICHIERS
       Fiche d'inventaire de l'ERR relative au tableau « La porteuse de
       pain ».
 
-  modigliani-soutine-note-err-209sup-506.jpg
-      Note administrative relative au tableau « La porteuse de pain ».
-
   modigliani-soutine-photographie-recto.jpg
       Recto de la photographie du tableau.
 
   modigliani-soutine-photographie-verso.jpg
       Annotations portées au verso de la photographie : le nom de Soutine
-      y figure.
+      y figure, et non celui de Modigliani.
+
+  modigliani-soutine-note-err-209sup-506.jpg
+      Note administrative relative au tableau « La porteuse de pain ».
 
 -----------------------------------------------------------------------------
   Page Pierre-Auguste Renoir (contenu/renoir.json)

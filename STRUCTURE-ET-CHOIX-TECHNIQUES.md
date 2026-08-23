@@ -14,19 +14,21 @@ Accueil  (index.html)
 │   • Les cinq tableaux, en vignettes cliquables (image + artiste + titre)
 │   • La synthèse générale        (section II du document source)
 │   • La chronologie de la spoliation (section III du document source)
-│   • L'accès aux pages sur les démarches administratives
+│   • L'accès aux dossiers des cinq tableaux
 │
-├── Les cinq tableaux non localisés
+├── Les tableaux disparus
 │   ├── Pierre Bonnard — « La femme au canapé »                 tableaux/bonnard.html
 │   ├── Albert Marquet — « Les bords de la Seine sous la neige » tableaux/marquet.html
-│   ├── Modigliani / Soutine — « La porteuse de pain »          tableaux/modigliani-soutine.html
+│   ├── Camille Pissarro — « La cavée, plein midi »             tableaux/pissarro.html
 │   ├── Pierre-Auguste Renoir — « Le Cannet »                   tableaux/renoir.html
-│   └── Camille Pissarro — « La cavée, plein midi »             tableaux/pissarro.html
+│   └── Chaïm Soutine — « La porteuse de pain »                 tableaux/modigliani-soutine.html
 │
-└── Le traitement administratif des réclamations  (section IV du document source)
-    ├── Les réclamations auprès des autorités françaises  demarches/autorites-francaises.html
-    ├── Les réclamations auprès de l'État allemand        demarches/autorites-allemandes.html
-    └── Les écarts de dimensions et de titres             demarches/ecarts-dimensions-titres.html
+├── Les demandes de restitution  (section IV du document source)
+│       demarches/demandes-de-restitution.html
+│   ├── Les réclamations auprès des autorités françaises  demarches/autorites-francaises.html
+│   └── Les réclamations auprès de l'État allemand        demarches/autorites-allemandes.html
+│
+└── Les écarts de dimensions et de titres                 demarches/ecarts-dimensions-titres.html
 ```
 
 **Chaque page de tableau** suit la même trame : un bandeau d'ouverture, une fiche
@@ -34,9 +36,11 @@ d'identification (artiste, titre, dimensions, référence ERR, référence RBS, 
 puis les chapitres du parcours de l'œuvre, chacun accompagné de ses documents d'archives
 légendés et sourcés. En bas de page, des liens mènent aux quatre autres tableaux.
 
-**Le menu, présent en haut de toutes les pages**, donne accès à l'accueil, aux cinq
-tableaux et aux trois pages de démarches. Sur téléphone, il se replie derrière un
-bouton « Menu ».
+**Le menu, présent en haut de toutes les pages**, comporte quatre entrées : Accueil,
+Les tableaux disparus, Les demandes de restitution et Dimensions et titres. Les deux
+entrées du milieu ouvrent un menu déroulant ; « Les demandes de restitution » possède
+en outre sa propre page, à laquelle son libellé conduit directement. Sur téléphone,
+le menu se replie derrière un bouton « Menu ».
 
 La section I du document source (« Objectif du présent document ») **n'a pas été reprise**,
 conformément à la consigne.

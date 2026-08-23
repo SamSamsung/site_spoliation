@@ -1,0 +1,39 @@
+// ============================================================================
+//  FICHIER : demandes-de-restitution.json
+//  RÔLE    : page d'entrée de la sous-section « Les demandes de restitution ».
+//            Elle présente le parcours administratif et donne accès aux deux
+//            pages détaillées (autorités françaises, autorités allemandes).
+// ============================================================================
+{
+  "banniere": {
+    "sur_titre": "Les demandes de restitution",
+    "titre": "Le traitement administratif des réclamations",
+    "chapo": "Dès juin 1945, Raoul Meyer engage des démarches auprès des autorités françaises, puis, en application de la loi fédérale allemande sur les restitutions, auprès des autorités ouest-allemandes.",
+    // Bandeau sans photographie : le titre s'affiche alors sur fond clair.
+    // Pour mettre une image de fond, déposez un fichier dans le dossier
+    // « images » puis écrivez son nom entre les guillemets ci-dessous.
+    "image": ""
+  },
+
+  "sections": [
+
+    {
+      "ancre": "les-deux-voies",
+      "paragraphes": [
+        "Deux pages détaillent ce parcours administratif : les réclamations déposées en France, puis celles adressées à l'État allemand."
+      ],
+      "liens": [
+        {
+          "libelle": "Les réclamations auprès des autorités françaises",
+          "lien": "demarches/autorites-francaises.html",
+          "description": "OBIP, Commission de Récupération Artistique, Répertoire des biens spoliés et concordance avec le fonds B 323/429."
+        },
+        {
+          "libelle": "Les réclamations auprès de l'État allemand",
+          "lien": "demarches/autorites-allemandes.html",
+          "description": "La loi BRüG, la décision du 16 mars 1961 et son raisonnement, tableau par tableau."
+        }
+      ]
+    }
+  ]
+}

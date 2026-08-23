@@ -17,7 +17,7 @@
   "banniere": {
     "sur_titre": "1941 — Mont-de-Marsan — Paris",
     "titre": "La collection spoliée de Raoul et Yvonne Meyer",
-    "chapo": "En février 1941, la collection de peintures de Raoul et Yvonne Meyer est saisie dans les coffres de l'agence du Crédit Commercial de France de Mont-de-Marsan, puis remise à l'Einsatzstab Reichsleiter Rosenberg. Plusieurs œuvres ont été restituées après la guerre. Cinq tableaux n'ont jamais été localisés.",
+    "chapo": "En février 1941, la collection de peintures de Raoul et Yvonne Meyer est saisie dans les coffres de l'agence du Crédit Commercial de France de Mont-de-Marsan. Elle est ensuite transférée à l'Einsatzstab Reichsleiter Rosenberg (ERR), l'organisation de pillage nazie spécialisée dans la confiscation des biens culturels à travers l'Europe occidentale pendant la Seconde Guerre mondiale. Plusieurs œuvres ont été restituées après la guerre. Cinq tableaux n'ont jamais été localisés.",
     // Image de fond du bandeau : déposez le fichier dans /images.
     // Laissez "" (deux guillemets vides) si vous ne voulez aucune image.
     // Bandeau sans photographie : le titre s'affiche alors sur fond clair.
@@ -33,7 +33,7 @@
     {
       "ancre": "les-cinq-tableaux",
       "titre": "Cinq tableaux non localisés",
-      "chapo": "Cliquez sur une œuvre pour accéder à son dossier documentaire : identification, dimensions, parcours connu, références d'archives et visuels associés.",
+      "chapo": "Cliquez sur une œuvre pour accéder à son dossier documentaire : identification, dimensions, parcours connu, références d'archives et visuels associés. À noter : il n'existe, à notre connaissance, aucune reproduction couleur des tableaux.",
       // Le mot-clé ci-dessous affiche automatiquement les vignettes des cinq
       // tableaux décrits dans le fichier site.json. Ne le modifiez pas.
       "vignettes": true
@@ -46,21 +46,9 @@
       "paragraphes": [
         "La spoliation de la collection de Raoul et Yvonne Meyer est aujourd'hui solidement documentée. Elle est établie à la fois par les dossiers de demandes de restitution déposés après la guerre, par le témoignage de l'agence bancaire où les œuvres furent saisies en février 1941, et par la documentation minutieusement constituée par les autorités allemandes.",
         "Après la guerre, Raoul et Yvonne Meyer ont saisi les autorités administratives compétentes chargées d'instruire les demandes de restitution. Cette procédure a permis le retour de plusieurs œuvres, comme l'atteste le Répertoire des biens spoliés (RBS) publié entre 1947 et 1949 par le Bureau central des restitutions à partir des déclarations transmises à l'Office des biens et intérêts privés (OBIP). Cinq œuvres demeurent toutefois introuvables.",
-        "L'inscription de ces œuvres au RBS constitue une reconnaissance administrative officielle de leur rattachement au processus français de recherche et de restitution des biens spoliés. Elle atteste que l'État français les a traitées comme des biens spoliés à rechercher ou à restituer.",
-        "La question réside désormais dans l'établissement, pour chacune d'elles, de la concordance matérielle et documentaire avec l'œuvre revendiquée. Elle est rendue particulièrement complexe par des divergences dans les dimensions des tableaux rapportées dans les documents d'archives, et par les variations dans les titres des tableaux utilisés dans les différents documents.",
-        "Cette concordance repose sur le croisement de deux ensembles documentaires : le RBS, qui attribue à chaque œuvre une référence française, et le fonds B 323/429 des Archives Nationales d'Allemagne, qui reprend ces références et les met en correspondance avec la nomenclature utilisée par l'ERR pour la collection Meyer, sous la forme « Meyer x ». Or les photographies prises par l'ERR portent précisément ce référencement allemand.",
-        "Le fonds B 323/429 joue ainsi un rôle de table de concordance entre les deux systèmes d'identification. Il permet de relier les œuvres décrites dans le RBS aux photographies allemandes correspondantes. La concordance matérielle et documentaire ne repose donc pas sur une simple similitude de titre, de sujet ou de description, mais sur une chaîne archivistique croisée reliant, pour chaque œuvre, la référence française du RBS, le numéro ERR « Meyer x » et la photographie prise par l'ERR.",
-        "Bien que la Commission de Récupération Artistique (CRA) puis l'OBIP aient été saisis des demandes de restitution de Raoul Meyer, ce dernier ne pouvait en attendre la moindre indemnisation, le mandat de ces institutions excluant tout versement de compensation. C'est vers l'Allemagne, en vertu de la loi BRüG, que les victimes françaises devaient se tourner pour espérer une indemnisation. Or la loi obligeait les victimes spoliées à prouver que leur œuvre avait franchi la frontière de la RFA. Le rejet des demandes de Raoul Meyer par les autorités allemandes le 16 mars 1961 illustre parfaitement cet obstacle probatoire.",
+        "Bien que la Commission de Récupération Artistique (CRA) puis l'Office des biens et intérêts privés (OBIP) aient été saisis des demandes de restitution de Raoul Meyer, ce dernier ne pouvait en attendre la moindre indemnisation, le mandat de ces institutions excluant tout versement de compensation. C'est vers l'Allemagne, en vertu de la loi BRüG, que les victimes françaises devaient se tourner pour espérer une indemnisation. Or la loi obligeait les victimes spoliées à prouver que leur œuvre avait franchi la frontière de la RFA. Le rejet des demandes de Raoul Meyer par les autorités allemandes le 16 mars 1961 illustre parfaitement cet obstacle probatoire.",
         "Il faudra attendre 1999 pour que l'État français assume directement la charge d'indemniser financièrement les œuvres d'art spoliées et non retrouvées. Il nous a été confirmé par la CIVS qu'aucune demande de restitution et d'indemnisation ne lui avait été soumise dans ce dossier."
-      ],
-      "encadre": {
-        "titre": "La chaîne archivistique en trois maillons",
-        "liste": [
-          "La référence française du Répertoire des biens spoliés (RBS).",
-          "Le numéro d'inventaire allemand de l'ERR, de la forme « Meyer x ».",
-          "La photographie prise par l'ERR à l'arrivée de l'œuvre au Jeu de Paume."
-        ]
-      }
+      ]
     },
 
     // ---------------------------------------------------------------------
@@ -73,11 +61,11 @@
       "chronologie": [
         {
           "date": "1939",
-          "texte": "Suite à l'entrée en guerre de la France, Raoul Meyer et son beau-frère Max Heilbronn déposent leur collection respective de tableaux au coffre du Crédit Commercial de France (CCF) à Paris."
+          "texte": "Suite à l'entrée en guerre de la France, Raoul Meyer et son beau-frère Max Heilbronn déposent leur collection respective de tableaux dans leur coffre du Crédit Commercial de France (CCF) à Paris."
         },
         {
           "date": "24 avril 1940",
-          "texte": "Après avoir fait expertiser leurs collections par un expert et pour les protéger des bombardements à Paris, Mesdames Meyer et Heilbronn décident de transférer leurs tableaux désencadrés à l'agence du CCF de Mont-de-Marsan, dans les Landes. Les tableaux sont acheminés dans deux caisses."
+          "texte": "Après avoir fait expertiser leurs collections par un expert et pour les protéger des bombardements à Paris, Mesdames Meyer et Heilbronn décident de transférer leurs tableaux à l'agence du CCF de Mont-de-Marsan, dans les Landes. Les tableaux sont désencadrés et acheminés dans deux caisses."
         },
         {
           "date": "11 novembre 1940",
@@ -107,32 +95,6 @@
           "fichier": "1945-12-01-attestation-ccf-mont-de-marsan.jpg",
           "legende": "Attestation établie le 1ᵉʳ décembre 1945 par la direction de l'agence du CCF de Mont-de-Marsan. On note que les références relatives aux tableaux et à leurs auteurs y sont très approximatives.",
           "credit": "Archives familiales"
-        }
-      ]
-    },
-
-    // ---------------------------------------------------------------------
-    {
-      "ancre": "les-demarches",
-      "titre": "Le traitement administratif des réclamations",
-      "paragraphes": [
-        "Dès juin 1945, Raoul Meyer engage des démarches auprès des autorités françaises, puis, en application de la loi fédérale allemande sur les restitutions, auprès des autorités ouest-allemandes. Trois pages détaillent ce parcours administratif et la question, décisive pour l'identification des œuvres, des écarts de dimensions et de titres."
-      ],
-      "liens": [
-        {
-          "libelle": "Les réclamations auprès des autorités françaises",
-          "lien": "demarches/autorites-francaises.html",
-          "description": "OBIP, Commission de Récupération Artistique, Répertoire des biens spoliés et concordance avec le fonds B 323/429."
-        },
-        {
-          "libelle": "Les réclamations auprès de l'État allemand",
-          "lien": "demarches/autorites-allemandes.html",
-          "description": "La loi BRüG, la décision du 16 mars 1961 et son raisonnement, tableau par tableau."
-        },
-        {
-          "libelle": "Les écarts de dimensions et de titres",
-          "lien": "demarches/ecarts-dimensions-titres.html",
-          "description": "Pourquoi la concordance repose sur un faisceau d'indices et non sur les mesures ou les intitulés."
         }
       ]
     }

@@ -154,36 +154,63 @@
     return li;
   }
 
-  /* Une entrée du menu qui ouvre un menu déroulant. */
+  /* Une entrée du menu qui ouvre un menu déroulant.
+     Si l'entrée possède aussi un "lien", son libellé devient un lien vers cette
+     page et une petite flèche, à côté, sert à dérouler le sous-menu. */
   function construireGroupeDeMenu(entree, rang) {
     var lienCourant = corps.getAttribute("data-lien");
 
     var li = creer("li", "navigation__groupe");
 
-    var bouton = creer("button", "navigation__declencheur");
-    bouton.type = "button";
-    bouton.appendChild(document.createTextNode(entree.libelle));
-    var chevron = creer("span", "navigation__chevron", "▾");
-    chevron.setAttribute("aria-hidden", "true");
-    bouton.appendChild(chevron);
-    bouton.setAttribute("aria-expanded", "false");
-
     var sousListe = creer("ul", "navigation__sous-menu");
     sousListe.id = "sous-menu-" + rang;
-    bouton.setAttribute("aria-controls", sousListe.id);
 
-    var contientLaPage = false;
+    var contientLaPage = (entree.lien === lienCourant);
     entree.sous_menu.forEach(function (sousEntree) {
       if (sousEntree.lien === lienCourant) { contientLaPage = true; }
       sousListe.appendChild(construireEntreeDeMenu(sousEntree));
     });
     if (contientLaPage) { li.classList.add("est-active"); }
 
-    li.appendChild(bouton);
+    var bouton;
+
+    if (entree.lien) {
+      // Libellé cliquable + flèche de déroulement séparée.
+      var enTete = creer("span", "navigation__entete-groupe");
+      var lien = creer("a", null, entree.libelle);
+      lien.href = racine + entree.lien;
+      if (entree.lien === lienCourant) { lien.setAttribute("aria-current", "page"); }
+      enTete.appendChild(lien);
+
+      bouton = creer("button", "navigation__fleche", "▾");
+      bouton.type = "button";
+      bouton.setAttribute("aria-expanded", "false");
+      bouton.setAttribute("aria-controls", sousListe.id);
+      bouton.setAttribute("aria-label", "Afficher les pages de « " + entree.libelle + " »");
+      enTete.appendChild(bouton);
+
+      li.appendChild(enTete);
+    } else {
+      // Libellé non cliquable : le libellé entier sert de déclencheur.
+      bouton = creer("button", "navigation__declencheur");
+      bouton.type = "button";
+      bouton.appendChild(document.createTextNode(entree.libelle));
+      var chevron = creer("span", "navigation__chevron", "▾");
+      chevron.setAttribute("aria-hidden", "true");
+      bouton.appendChild(chevron);
+      bouton.setAttribute("aria-expanded", "false");
+      bouton.setAttribute("aria-controls", sousListe.id);
+      li.appendChild(bouton);
+    }
+
     li.appendChild(sousListe);
 
     bouton.addEventListener("click", function () {
-      li.classList.contains("est-deploye") ? replierGroupe(li) : deployerGroupe(li);
+      if (!li.classList.contains("est-deploye")) { deployerGroupe(li); return; }
+      // Sur grand écran, le menu est déjà ouvert du seul fait du survol :
+      // un clic ne doit pas le refermer sous le curseur de la personne.
+      if (grandEcran() && li.matches(":hover")) { return; }
+      replierGroupe(li);
     });
 
     // À la souris, sur grand écran, le menu s'ouvre au survol.
@@ -208,13 +235,13 @@
 
   function deployerGroupe(groupe) {
     groupe.classList.add("est-deploye");
-    var bouton = groupe.querySelector(".navigation__declencheur");
+    var bouton = groupe.querySelector(".navigation__declencheur, .navigation__fleche");
     if (bouton) { bouton.setAttribute("aria-expanded", "true"); }
   }
 
   function replierGroupe(groupe) {
     groupe.classList.remove("est-deploye");
-    var bouton = groupe.querySelector(".navigation__declencheur");
+    var bouton = groupe.querySelector(".navigation__declencheur, .navigation__fleche");
     if (bouton) { bouton.setAttribute("aria-expanded", "false"); }
   }
 
@@ -543,7 +570,14 @@
     (site.navigation || []).forEach(function (entree) {
       var li = creer("li");
       if (entree.sous_menu && entree.sous_menu.length) {
-        li.appendChild(creer("span", "pied__groupe", entree.libelle));
+        // Si le groupe a lui-même une page, son libellé est cliquable.
+        if (entree.lien) {
+          var lienGroupe = creer("a", "pied__groupe", entree.libelle);
+          lienGroupe.href = racine + entree.lien;
+          li.appendChild(lienGroupe);
+        } else {
+          li.appendChild(creer("span", "pied__groupe", entree.libelle));
+        }
         var sousListe = creer("ul", "pied__sous-liste");
         entree.sous_menu.forEach(function (sousEntree) {
           var sousLi = creer("li");

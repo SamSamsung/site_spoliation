@@ -26,6 +26,10 @@
   //       "lien"      = le fichier de la page (ne pas modifier sans raison)
   //       "sous_menu" = la liste des entrées du menu déroulant
   //
+  //     Une entrée peut avoir un "lien" ET un "sous_menu" : c'est le cas de
+  //     « Les demandes de restitution ». Cliquer sur son libellé ouvre sa page ;
+  //     la petite flèche placée à côté déroule les deux sous-entrées.
+  //
   //     Pour renommer une entrée, changez son "libelle".
   //     Pour changer l'ordre des tableaux dans le menu déroulant, déplacez
   //     leurs blocs { … } à l'intérieur de la liste "sous_menu".
@@ -46,6 +50,7 @@
 
     {
       "libelle": "Les demandes de restitution",
+      "lien": "demarches/demandes-de-restitution.html",
       "sous_menu": [
         { "libelle": "Autorités françaises", "lien": "demarches/autorites-francaises.html" },
         { "libelle": "Autorités allemandes", "lien": "demarches/autorites-allemandes.html" }
